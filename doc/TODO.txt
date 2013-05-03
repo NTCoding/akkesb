@@ -1,0 +1,10 @@
+
+TODO
+----
+
+1. Diagram showing all the components that need to be running on a system
+	+ incoming, work, error queues
+	+ application using client
+	+ bus host
+
+2. Create a plan
