@@ -1,0 +1,30 @@
+
+Akka-esb Vision
+---------------
+To create a service bus that facilitates the creation of highly-decoupled (temporal, platform & implementation) business 
+services that can scale horizontally and are highly-resilient to faults.
+
+
+Features
+----------------------
++ Highly fault-tolerant - as soon as business intent is captured, it should never be lost. e.g. at least once message delivery
++ Enables horizontal scalability (as much as it can)
++ Easily monitorable (performance of system, errors)
++ Primarily to run on linux
++ Can be used in any programming language
+
+
+Motivations
+-----------
++ Want to learn more about building distributed systems and middleware
++ Want to improve my scala and akka skills
++ Need a service bus similar to NServiceBus that works on linux and for any language, for my future projects
+
+
+Development Philosohpy
+----------------------
++ It should be easy for other devs to understand the project at a high-level very quickly so they can get involved
++ All errors should be as informative as possible - OS dependencies through to bad coding logic
++ Strong bias in favour of testing - end-to-end and unit where possible
+
+
