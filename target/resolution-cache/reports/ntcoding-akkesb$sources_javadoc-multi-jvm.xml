@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="ntcoding"
+		module="akkesb$sources_javadoc"
+		revision="0.1"
+		conf="multi-jvm"
+		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130518100953"/>
+	<dependencies>
+		<module organisation="com.typesafe.akka" name="akka-remote-tests-experimental_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514134027" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3644" time="0" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-remote-tests-experimental_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="420077" time="1775" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/docs/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-remote-tests-experimental_2.10" type="jar" ext="jar" status="no" details="" size="502547" time="0" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/jars/akka-remote-tests-experimental_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4.jar"/>
+					</artifact>
+					<artifact name="akka-remote-tests-experimental_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="41458" time="861" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/srcs/akka-remote-tests-experimental_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-remote_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514133951" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3755" time="0" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-remote_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="298149" time="2726" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/docs/akka-remote_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-remote_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="59926" time="1688" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/srcs/akka-remote_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-remote_2.10" type="jar" ext="jar" status="successful" details="" size="358873" time="1364" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/jars/akka-remote_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.uncommons.maths" name="uncommons-maths">
+			<revision name="1.2.2a" status="release" pubdate="20110408145605" resolver="public" artresolver="public" homepage="http://maths.uncommons.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="6">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2738" time="0" location="/home/nick/.ivy2/cache/org.uncommons.maths/uncommons-maths/ivy-1.2.2a.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="1.2.2a" rev-constraint-default="1.2.2a" rev-constraint-dynamic="1.2.2a" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="uncommons-maths" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="158263" time="1539" location="/home/nick/.ivy2/cache/org.uncommons.maths/uncommons-maths/docs/uncommons-maths-1.2.2a-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar"/>
+					</artifact>
+					<artifact name="uncommons-maths" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="61093" time="858" location="/home/nick/.ivy2/cache/org.uncommons.maths/uncommons-maths/srcs/uncommons-maths-1.2.2a-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar"/>
+					</artifact>
+					<artifact name="uncommons-maths" type="jar" ext="jar" status="no" details="" size="49019" time="0" location="/home/nick/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.5.8.Final" status="release" pubdate="20120929083755" resolver="public" artresolver="public" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6423" time="0" location="/home/nick/.ivy2/cache/io.netty/netty/ivy-3.5.8.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="3.5.8.Final" rev-constraint-default="3.5.8.Final" rev-constraint-dynamic="3.5.8.Final" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="netty" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2899045" time="3284" location="/home/nick/.ivy2/cache/io.netty/netty/docs/netty-3.5.8.Final-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar"/>
+					</artifact>
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1016327" time="2687" location="/home/nick/.ivy2/cache/io.netty/netty/srcs/netty-3.5.8.Final-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar"/>
+					</artifact>
+					<artifact name="netty" type="jar" ext="jar" status="successful" details="" size="1125370" time="2591" location="/home/nick/.ivy2/cache/io.netty/netty/jars/netty-3.5.8.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="2.4.1" status="release" pubdate="20110706203342" resolver="public" artresolver="public" homepage="http://code.google.com/p/protobuf" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2948" time="0" location="/home/nick/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.4.1" rev-constraint-default="2.4.1" rev-constraint-dynamic="2.4.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="200142" time="1662" location="/home/nick/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-2.4.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar"/>
+					</artifact>
+					<artifact name="protobuf-java" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1070255" time="2527" location="/home/nick/.ivy2/cache/com.google.protobuf/protobuf-java/docs/protobuf-java-2.4.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="protobuf-java" type="jar" ext="jar" status="no" details="" size="450279" time="0" location="/home/nick/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-testkit_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514133839" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2877" time="0" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-testkit_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="26878" time="1409" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/srcs/akka-testkit_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-testkit_2.10" type="jar" ext="jar" status="successful" details="" size="233085" time="1315" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/jars/akka-testkit_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar"/>
+					</artifact>
+					<artifact name="akka-testkit_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="212651" time="1536" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/docs/akka-testkit_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.10">
+			<revision name="1.9.1" status="release" pubdate="20121222185935" resolver="public" artresolver="public" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="9">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4873" time="0" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-1.9.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="1.9.1" rev-constraint-default="1.9.1" rev-constraint-dynamic="1.9.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalatest_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="773075" time="1245" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/srcs/scalatest_2.10-1.9.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.10" type="jar" ext="jar" status="no" details="" size="3114958" time="0" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="20533" time="580" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/docs/scalatest_2.10-1.9.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.0" status="release" pubdate="20121220072932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2552" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3149351" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="418349" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33515231" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-actors">
+			<revision name="2.10.0" status="release" pubdate="20121220073006" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="10">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2548" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-actors/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-actors" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="178028" time="754" location="/home/nick/.ivy2/cache/org.scala-lang/scala-actors/srcs/scala-actors-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-actors" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="33515231" time="15069" location="/home/nick/.ivy2/cache/org.scala-lang/scala-actors/docs/scala-actors-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-actors" type="jar" ext="jar" status="no" details="" size="451307" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.10" status="release" pubdate="20110929191223" resolver="public" artresolver="public" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2765" time="0" location="/home/nick/.ivy2/cache/junit/junit/ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="141185" time="0" location="/home/nick/.ivy2/cache/junit/junit/srcs/junit-4.10-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10-sources.jar"/>
+					</artifact>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="253160" time="0" location="/home/nick/.ivy2/cache/junit/junit/jars/junit-4.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar"/>
+					</artifact>
+					<artifact name="junit" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="424758" time="0" location="/home/nick/.ivy2/cache/junit/junit/docs/junit-4.10-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.1" status="release" pubdate="20070718191143" resolver="public" artresolver="public" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<metadata-artifact status="no" details="" size="4321" time="0" location="/home/nick/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="76643" time="0" location="/home/nick/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+					</artifact>
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="327" time="0" location="/home/nick/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.1.4" status="release" pubdate="20130514133804" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2641" time="0" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/ivy-2.1.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.1.4" rev-constraint-default="2.1.4" rev-constraint-dynamic="2.1.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-actor_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="242575" time="1637" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/srcs/akka-actor_2.10-2.1.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="jar" ext="jar" status="successful" details="" size="1884983" time="2606" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.1.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1584349" time="3273" location="/home/nick/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/docs/akka-actor_2.10-2.1.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.0.0" status="release" pubdate="20121015140115" resolver="public" artresolver="public" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2725" time="0" location="/home/nick/.ivy2/cache/com.typesafe/config/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="124199" time="1473" location="/home/nick/.ivy2/cache/com.typesafe/config/srcs/config-1.0.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar"/>
+					</artifact>
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="149295" time="2069" location="/home/nick/.ivy2/cache/com.typesafe/config/docs/config-1.0.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="config" type="jar" ext="jar" status="successful" details="" size="185676" time="2338" location="/home/nick/.ivy2/cache/com.typesafe/config/jars/config-1.0.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.1" status="release" pubdate="20130312230420" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2392" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.pom"/>
+				<caller organisation="ntcoding" name="akkesb$sources_javadoc" conf="test, compile, runtime, multi-jvm" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1058917" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33578873" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

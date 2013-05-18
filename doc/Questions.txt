@@ -19,3 +19,5 @@ Outstanding Questions
 8. How will the system handle hardware failures - what will happen to messages in all of the queues? They need to be saved (probably)
 
 9. Should there be an error queue for each service or one centralised error queue (with availability levels as required)?.
+
+10. If the client is to be push based (somehow, e.g. ports) would it be possible to just hook into rabbitmq and let it do the work?

@@ -1,164 +1,971 @@
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: akkesb#akkesb$sources_javadoc_2.10;0.1[0m
-[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: ntcoding#akkesb$sources_javadoc;0.1[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f4d6e0e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c581d1c[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.1[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@788c0009[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.1.4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2113bfac[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.0.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe#config;1.0.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.0.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote_2.10;2.1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1717da80[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-remote_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote_2.10;2.1.4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving io.netty#netty;3.5.8.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@638b961d[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty;3.5.8.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.netty#netty;3.5.8.Final[0m
+[0m[[0mdebug[0m] [0m	found io.netty#netty;3.5.8.Final in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.google.protobuf#protobuf-java;2.4.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15ad5b59[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.4.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.protobuf#protobuf-java;2.4.1[0m
+[0m[[0mdebug[0m] [0m	found com.google.protobuf#protobuf-java;2.4.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.uncommons.maths#uncommons-maths;1.2.2a ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a58e7c7[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
+[0m[[0mdebug[0m] [0m	found org.uncommons.maths#uncommons-maths;1.2.2a in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-testkit_2.10;2.1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cfc22bd[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-testkit_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-testkit_2.10;2.1.4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11cd40b6[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.10;1.9.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74731357[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;1.9.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalatest#scalatest_2.10;1.9.1[0m
+[0m[[0mdebug[0m] [0m	found org.scalatest#scalatest_2.10;1.9.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-actors;2.10.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f5a9739[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-actors;2.10.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-actors;2.10.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-actors;2.10.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e16dd86[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.10.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.10 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39fcd9f5[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52807edf[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0m	found junit#junit;4.10 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@722413fe[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ea43902[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hamcrest#hamcrest-core;1.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.hamcrest#hamcrest-core;1.1[0m
 [0m[[0mdebug[0m] [0m	found org.hamcrest#hamcrest-core;1.1 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'multi-jvm'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [multi-jvm][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [multi-jvm->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [multi-jvm->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [multi-jvm->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [multi-jvm->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [multi-jvm->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile-internal->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime-internal->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test-internal->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test-internal->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test-internal->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->junit#junit;4.10 [test-internal->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies akkesb#akkesb$sources_javadoc_2.10;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-library;2.10.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-actor_2.10;2.1.4 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe#config;1.0.0 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote_2.10;2.1.4 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->io.netty#netty;3.5.8.Final [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.google.protobuf#protobuf-java;2.4.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.uncommons.maths#uncommons-maths;1.2.2a [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-testkit_2.10;2.1.4 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scalatest#scalatest_2.10;1.9.1 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-actors;2.10.0 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.scala-lang#scala-reflect;2.10.0 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->junit#junit;4.10 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb$sources_javadoc;0.1->org.hamcrest#hamcrest-core;1.1 [test-internal->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for akkesb#akkesb$sources_javadoc_2.10;0.1 [pom][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/nick/repos/akkesb/target/resolution-cache/akkesb/akkesb$sources_javadoc_2.10/0.1/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ntcoding#akkesb$sources_javadoc;0.1 [pom][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb$sources_javadoc/0.1/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.1!scala-library.jar(src)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.1!scala-library.jar(doc)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.1.4!akka-actor_2.10.jar (2606ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.1.4!akka-actor_2.10.jar(src) (1637ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-actor_2.10;2.1.4!akka-actor_2.10.jar(doc) (3273ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.0.0!config.jar(src) (1473ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.0.0!config.jar(doc) (2069ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/config/1.0.0/config-1.0.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe#config;1.0.0!config.jar (2338ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.10;2.1.4!akka-remote_2.10.jar(doc) (2726ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.10;2.1.4!akka-remote_2.10.jar(src) (1688ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote_2.10;2.1.4!akka-remote_2.10.jar (1364ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.netty#netty;3.5.8.Final!netty.jar(doc) (3284ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.netty#netty;3.5.8.Final!netty.jar(src) (2687ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/io/netty/netty/3.5.8.Final/netty-3.5.8.Final.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.netty#netty;3.5.8.Final!netty.jar (2591ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar(src) (1662ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar(doc) (2527ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar(doc) (1539ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar(src) (858ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-testkit_2.10;2.1.4!akka-testkit_2.10.jar (1315ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-testkit_2.10;2.1.4!akka-testkit_2.10.jar(src) (1409ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.10/2.1.4/akka-testkit_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-testkit_2.10;2.1.4!akka-testkit_2.10.jar(doc) (1536ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4!akka-remote-tests-experimental_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4!akka-remote-tests-experimental_2.10.jar(doc) (1775ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-remote-tests-experimental_2.10/2.1.4/akka-remote-tests-experimental_2.10-2.1.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-remote-tests-experimental_2.10;2.1.4!akka-remote-tests-experimental_2.10.jar(src) (861ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar(src) (1245ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/1.9.1/scalatest_2.10-1.9.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar(doc) (580ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.jar(src) (754ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-actors/2.10.0/scala-actors-2.10.0-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-actors;2.10.0!scala-actors.jar(doc) (15069ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-actors;2.10.0!scala-actors.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar(doc)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.10!junit.jar(src)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.10!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.10!junit.jar(doc)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar(src)[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 133ms :: artifacts dl 29ms[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 compile produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 runtime produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 test produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 provided produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 optional produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 compile-internal produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 runtime-internal produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 test-internal produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 plugin produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 sources produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 docs produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for akkesb#akkesb$sources_javadoc_2.10;0.1 pom produced in /home/nick/repos/akkesb/target/resolution-cache/reports/akkesb-akkesb$sources_javadoc_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (133ms resolve - 29ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 743ms :: artifacts dl 59017ms[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 compile produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 runtime produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 test produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 provided produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 optional produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 multi-jvm produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-multi-jvm.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 compile-internal produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 runtime-internal produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 test-internal produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 plugin produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 sources produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 docs produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for ntcoding#akkesb$sources_javadoc;0.1 pom produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb$sources_javadoc-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (743ms resolve - 59017ms download)[0m
