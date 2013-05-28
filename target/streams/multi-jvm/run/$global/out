@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32m* commands.CommandsAreSentToRegisteredHandlers_[0m[0m
+[0m[[0mdebug[0m] [0mStarting JVM-_MarketingServiceHost for commands.CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost[0m
+[0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=0[0m
+[0m[[0mdebug[0m] [0mStarting JVM-_CatalogueServiceHost for commands.CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost[0m
+[0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=1[0m
+[0m[[0mdebug[0m] [0mStarting JVM-_PaymentsServiceHost for commands.CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost[0m
+[0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=2[0m
+[0m[[0mdebug[0m] [0mStarting JVM-_TestsAndAssertions for commands.CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions[0m
+[0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=3[0m

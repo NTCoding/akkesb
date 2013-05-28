@@ -1,8 +1,7 @@
 package commands
 
-import org.junit._
-import junit.framework.Assert._
-
+import Host.BusHost
+import utils._
 
 object CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost {
 
@@ -19,8 +18,8 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
 
     def main(args: Array[String]) {
         val host = new BusHost("127.0.0.1", "3052", "catalogue_service")
-        host willSendCommands List( ("stop_taking_payments_for_product") )
-        host willHandleCommands List ( ("update_price") )
+        host willSendCommands List("stop_taking_payments_for_product")
+        host willHandleCommands List("update_price")
         host joinCluster
     }
 }
@@ -30,27 +29,19 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
 
     def main(args: Array[String]) {
         val host = new BusHost("127.0.0.1", "3053", "payments_service")
-        host willHandleCommands List ( ("stop_taking_payments_for_product") )
+        host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
     }
 }
 
-class Commands_are_sent_to_registered_handlers_only_tests {
+object CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions {
 
-    @Test
-    def marketing_service_update_price_commands_are_handled_by_the_catalogue_service {
-        // register a handler with dbus for catalogue service messages
+    def main(args: Array[String]) {
+        Testing.sendCommand("update_price", List(("productId", 1), ("price", 50))).via("marketing_service")
+        Testing.assertService("catalogue_service").receivedCommand(("update_price", List(("productId", 1), ("price", 50))))
 
-        // send the message through marketing service
-
-        // wait 5 seconds
-
-        // assert dbus sent the message
-        assertTrue(false)
+        Testing.sendCommand("stop_taking_payments_for_product", List(("productId", 1))).via("catalogue_service")
+        Testing.assertService("payments_service").receivedCommand(("stop_taking_payments_for_product", List(("productId", 1))))
     }
 
-    @Test
-    def catalogue_service_stop_taking_payments_commands_are_handled_by_the_payments_service {
-        assertTrue(false)
-    }
 }

@@ -1,0 +1,63 @@
+gen-idea
+clean
+update
+compile
+test
+compile
+test
+compile
+test
+compile
+test
+clean
+update
+compile
+test
+compile
+test
+compile
+test
+clean
+update
+compile
+test
+gen-idea
+test
+clean
+update
+compile
+test
+multi-jvm: tst
+multi-jvm: test
+multi-jvm:test
+multi-jvm: CommansAreSentToRegisteredHandlers
+multi-jvm: CommandsAreSentToRegisteredHandlers
+multi-jvm:CommandsAreSentToRegisteredHandlers
+multi-jvm-tests:CommandsAreSentToRegisteredHandlers
+multi-jvm-tests:CommandsAreSentToRegisteredHandlers test
+multi-jvm: CommandsAreSentToRegisteredHandlers test
+multi-jvm:run CommandsAreSentToRegisteredHandlers test
+multi-jvm:run CommandsAreSentToRegisteredHandlers 
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers 
+multi-jvm:test-only commands.CommandsAreSentToRegisteredHandlers 
+multi-jvm:test-only commands.CommandsAreSentToRegisteredHandl
+multi-jvm:run CommandsAreSentToRegisteredHandlers
+test
+compile
+update
+clean
+make
+multi-jvm:compile
+multi-jvm:compile -feature
+multi-jvm:compile
+multi-jvm:test
+multi-jvm:run CommandsAreSentToRegisteredHandlers
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers
+multi-jvm:run scala.commands.CommandsAreSentToRegisteredHandlers
+multi-jvm:this-project
+multi-jvm:test
+multi-jvm:test -feature
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers
+multi-jvm:run commands.CommandsAreSentToRegisteredHandl
+multi-jvm-tests
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
