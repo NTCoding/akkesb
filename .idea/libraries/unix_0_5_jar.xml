@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="unix-0.5.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/unix-0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

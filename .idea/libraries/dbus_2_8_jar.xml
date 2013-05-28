@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dbus-2.8.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/dbus-2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -3,11 +3,11 @@
 <ivy-report version="1.0">
 	<info
 		organisation="ntcoding"
-		module="akkesb"
+		module="akkesb$sources_javadoc"
 		revision="0.1"
 		conf="docs"
 		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130528172651"/>
+		date="20130528172704"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

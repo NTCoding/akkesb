@@ -63,3 +63,9 @@ multi-jvm-tests
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 mutli-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+reload
+clean
+update
+compile
+test
+gen-idea
