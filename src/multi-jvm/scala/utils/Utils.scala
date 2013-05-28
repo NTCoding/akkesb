@@ -2,24 +2,24 @@ package utils
 
 object Testing {
 
-    def sendCommand(command: (String,List[(String, _)])) = {
-        new Command(command)
+    def sendCommand(application: String, command: (String,List[(String, _)])) = {
+        new Command(application, command)
     }
 
-    def assertService(service: String) = {
-        new Service(service)
+    def assertService(application: String, service: String) = {
+        new Service(application, service)
     }
 
 }
 
-class Command(val command: (String, List[(String, _)])) {
+class Command(val application: String, val command: (String, List[(String, _)])) {
 
-    def via(service: String) {
-
+    def via(application: String, service: String) {
+        DBus.Send(f"akkesb.$application", )
     }
 }
 
-class Service(val name: String) {
+class Service(val application: String, val name: String) {
 
     def receivedCommand(message: (String, List[(String, _)])) {
 

@@ -21,3 +21,5 @@ Outstanding Questions
 9. Should there be an error queue for each service or one centralised error queue (with availability levels as required)?.
 
 10. If the client is to be push based (somehow, e.g. ports) would it be possible to just hook into rabbitmq and let it do the work?
+
+11. should there be 1 host process machine or 1 host process per service? - Spend time thinking about this and looking at how other buses work
