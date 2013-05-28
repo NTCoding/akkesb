@@ -61,3 +61,5 @@ multi-jvm:run commands.CommandsAreSentToRegisteredHandlers
 multi-jvm:run commands.CommandsAreSentToRegisteredHandl
 multi-jvm-tests
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+mutli-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_

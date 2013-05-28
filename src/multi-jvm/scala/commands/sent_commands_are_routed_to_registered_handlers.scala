@@ -28,7 +28,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
 object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
 
     def main(args: Array[String]) {
-        val host = new BusHost("127.0.0.1", "3053", "payments_service")
+        val host = new BusHost("127.0.0.1", "3053", "commands_are_sent_test", "payments_service")
         host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
     }
@@ -37,11 +37,18 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
 object CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions {
 
     def main(args: Array[String]) {
-        Testing.sendCommand("commands_are_sent_test", "update_price", List(("productId", 1), ("price", 50))).via("marketing_service")
-        Testing.assertService("commands_are_sent_test","catalogue_service").receivedCommand(("update_price", List(("productId", 1), ("price", 50))))
 
-        Testing.sendCommand("commands_are_sent_test", "stop_taking_payments_for_product", List(("productId", 1))).via("catalogue_service")
-        Testing.assertService("commands_are_sent_test","payments_service").receivedCommand(("stop_taking_payments_for_product", List(("productId", 1))))
+        Testing.sendCommand("commands_are_sent_test", ("update_price", List(("productId", 1), ("price", 50))))
+               .via("marketing_service")
+
+        Testing.assertService("commands_are_sent_test","catalogue_service")
+               .receivedCommand(("update_price", List(("productId", 1), ("price", 50))))
+
+        Testing.sendCommand("commands_are_sent_test", ("stop_taking_payments_for_product", List(("productId", 1))))
+               .via("catalogue_service")
+
+        Testing.assertService("commands_are_sent_test","payments_service")
+               .receivedCommand(("stop_taking_payments_for_product", List(("productId", 1))))
     }
 
 }

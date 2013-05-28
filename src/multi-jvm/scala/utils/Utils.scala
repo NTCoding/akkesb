@@ -14,15 +14,15 @@ object Testing {
 
 class Command(val application: String, val command: (String, List[(String, _)])) {
 
-    def via(application: String, service: String) {
-        DBus.Send(f"akkesb.$application", )
+    def via(service: String) {
+
     }
 }
 
 class Service(val application: String, val name: String) {
 
-    def receivedCommand(message: (String, List[(String, _)])) {
-
+    def receivedCommand(command: (String, List[(String, _)])) {
+         throw new Exception(f"command: '${command._1}' was not received by $application.$name")
     }
 
 }
