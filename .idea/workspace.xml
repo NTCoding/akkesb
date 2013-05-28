@@ -4,13 +4,14 @@
     <list default="true" id="f95b558c-c55a-40cb-8c57-a894bcdd0389" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" afterPath="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" afterPath="$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="akkesb.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369742700976" ignored="false" />
-    <file path="/sent_commands_are_routed_to_registered_handlers.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369744639524" ignored="false" />
+    <file path="/Dummy.txt" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369757304022" ignored="false" />
+    <file path="/sent_commands_are_routed_to_registered_handlers.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369757356743" ignored="false" />
     <file path="/a.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369411357144" ignored="false" />
-    <file path="/Utils.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369744172149" ignored="false" />
+    <file path="/Utils.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369758122165" ignored="false" />
     <file path="/BusHost.scala" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369743122285" ignored="false" />
     <file path="/a.dummy" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369740683389" ignored="false" />
     <file path="/akkesb.iml" changelist="f95b558c-c55a-40cb-8c57-a894bcdd0389" time="1369741874047" ignored="false" />
@@ -28,7 +29,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -63,6 +63,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -72,10 +73,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sent_commands_are_routed_to_registered_handlers.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sent_commands_are_routed_to_registered_handlers.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="64" selection-start="742" selection-end="742" vertical-scroll-proportion="0.14835787">
+            <state line="36" column="35" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utils.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="39" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="21" column="95" selection-start="506" selection-end="506" vertical-scroll-proportion="0.38052094">
               <folding />
             </state>
           </provider>
@@ -122,8 +123,8 @@
         <option value="$PROJECT_DIR$/src/multi-jvm/utils/Utils.scala" />
         <option value="$PROJECT_DIR$/.idea_modules/akkesb.iml" />
         <option value="$PROJECT_DIR$/src/main/scala/Host/BusHost.scala" />
-        <option value="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" />
+        <option value="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
       </list>
     </option>
   </component>
@@ -158,6 +159,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,8 +277,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,9 +293,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -332,6 +333,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -357,19 +371,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -477,7 +478,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2439222" sideWeight="0.6703418" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -635,16 +636,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
+    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+        <state line="36" column="35" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
+    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="742" selection-end="742" vertical-scroll-proportion="0.14835787">
+        <state line="21" column="95" selection-start="506" selection-end="506" vertical-scroll-proportion="0.38052094">
           <folding />
         </state>
       </provider>

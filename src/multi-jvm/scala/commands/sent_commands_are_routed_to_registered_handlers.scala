@@ -18,7 +18,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost {
         // TODO hostname and port should be passed in as args - come back to this later
         val host = new BusHost("127.0.0.1", "3051","commands_are_sent_test", "marketing_service")
 
-        // the following instructions will be received from DBus
+        // TODO - if these are not set at startup - they will need to be sent via dbus instead
         host willSendCommands List( ("update_price") )
         host joinCluster
     }
@@ -30,8 +30,6 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
     def main(args: Array[String]) {
         val host = new BusHost("127.0.0.1", "3052", "commands_are_sent_test", "catalogue_service")
         host willSendCommands List("stop_taking_payments_for_product")
-
-        // will the host receive these instructions from client applications and thus DBus? Yes
         host willHandleCommands List("update_price")
         host joinCluster
     }
@@ -42,8 +40,6 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
 
     def main(args: Array[String]) {
         val host = new BusHost("127.0.0.1", "3053", "commands_are_sent_test", "payments_service")
-
-        // the following insructions will be received from DBus
         host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
     }
