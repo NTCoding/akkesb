@@ -15,7 +15,7 @@ object Testing {
 class Command(val application: String, val command: (String, List[(String, _)])) {
 
     def via(service: String) {
-
+        DBus.send(f"akkesb.$application")
     }
 }
 
