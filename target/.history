@@ -89,3 +89,25 @@ test
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 gen-idea
 multi-jvm:run commmands.CommandsAreSentToRegisteredHandlers_
+reload
+clean
+update
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+tst
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+test
+clean
+update
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+est
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_

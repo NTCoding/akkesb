@@ -1,34 +1,15 @@
-[0m[[0mdebug[0m] [0mInvalidating /home/nick/.sbt/boot/scala-2.10.1/lib/scala-library.jar: class scala.package$ now provided by /home/nicktune/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
-[0m[[0mdebug[0m] [0mInvalidating /usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar: class java.lang.Object now provided by /usr/lib/jdk1.7.0_21/jre/lib/rt.jar[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
-[0m[[0mdebug[0m] [0m	removed:Set(/mnt/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
-[0m[[0mdebug[0m] [0m	added: Set(/home/nicktune/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set(/mnt/repos/akkesb/target/classes/Host/BusHost.class)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mModified external sources: Set()[0m
-[0m[[0mdebug[0m] [0mModified binary dependencies: Set(/home/nick/.sbt/boot/scala-2.10.1/lib/scala-library.jar, /usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar)[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/mnt/repos/akkesb/src/main/scala/Host/BusHost.scala, /home/nicktune/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set(/mnt/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
-[0m[[0mdebug[0m] [0m	binary dep: Set(/mnt/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/mnt/repos/akkesb/src/main/scala/Host/BusHost.scala, /home/nicktune/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/nicktune/repos/akkesb/target/classes...[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 4ab6569e, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-d[0m
-[0m[[0mdebug[0m] [0m	/home/nicktune/repos/akkesb/target/classes[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/usr/lib/jdk1.7.0_21/jre/lib/resources.jar:/usr/lib/jdk1.7.0_21/jre/lib/rt.jar:/usr/lib/jdk1.7.0_21/jre/lib/sunrsasign.jar:/usr/lib/jdk1.7.0_21/jre/lib/jsse.jar:/usr/lib/jdk1.7.0_21/jre/lib/jce.jar:/usr/lib/jdk1.7.0_21/jre/lib/charsets.jar:/usr/lib/jdk1.7.0_21/jre/lib/jfr.jar:/usr/lib/jdk1.7.0_21/jre/classes:/home/nicktune/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/home/nicktune/repos/akkesb/target/classes:/home/nicktune/repos/akkesb/lib/unix-0.5.jar:/home/nicktune/repos/akkesb/lib/hexdump-0.2.jar:/home/nicktune/repos/akkesb/lib/dbus-2.8.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/bundles/akka-actor_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/com.typesafe/config/bundles/config-1.0.0.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/bundles/akka-remote_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/io.netty/netty/bundles/netty-3.5.8.Final.jar:/home/nicktune/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar:/home/nicktune/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 2.785000925 s[0m
-[0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
-[0m[[0mdebug[0m] [0m	Set(/home/nicktune/repos/akkesb/src/main/scala/Host/BusHost.scala, /mnt/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
-[0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m
-[0m[[0mdebug[0m] [0m	[0m
-[0m[[0mdebug[0m] [0mStep 2 invalidated sources:[0m
-[0m[[0mdebug[0m] [0m	Set(/home/nicktune/repos/akkesb/src/main/scala/Host/BusHost.scala, /mnt/repos/akkesb/src/main/scala/Host/BusHost.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

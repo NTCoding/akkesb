@@ -19,7 +19,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost {
         val host = new BusHost("127.0.0.1", "3051","commands_are_sent_test", "marketing_service")
 
         // TODO - if these are not set at startup - they will need to be sent via dbus instead
-        host willSendCommands List( ("update_price") )
+        host willSendCommands List(("update_price"))
         host joinCluster
     }
 

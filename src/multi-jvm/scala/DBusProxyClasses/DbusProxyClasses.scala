@@ -1,23 +1,18 @@
-package akkesb.queries {
 
-    import org.freedesktop.dbus.{Tuple, DBusInterface}
+package akkesb.commands  {
 
-    trait Get extends DBusInterface {
-
-          def nextCommand : Tuple
-    }
-
-}
-
-package akkesb.inbound {
-
-    import org.freedesktop.dbus.{Tuple, DBusInterface}
+    import org.freedesktop.dbus.{Variant, Tuple, DBusInterface, DBusMap}
 
     trait Inbox extends DBusInterface {
 
-        def addCommand(command: Tuple)
+        def addCommand(command: TwoTuple[String, String])
+
+        def nextMessage : TwoTuple[String, String]
     }
+
+    final class TwoTuple[A, B](val first: A, val second: B) extends Tuple { }
 }
+
 
 
 
