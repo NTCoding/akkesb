@@ -5,12 +5,12 @@ package akkesb.commands  {
 
     trait Inbox extends DBusInterface {
 
-        def addCommand(command: TwoTuple[String, String])
+        def addCommand(command: ThreeTuple[String, Array[String], Array[String]])
 
-        def nextMessage : TwoTuple[String, String]
+        def nextMessage : ThreeTuple[String, Array[String], Array[String]]
     }
 
-    final class TwoTuple[A, B](val first: A, val second: B) extends Tuple { }
+    final class ThreeTuple[A, B, C](val first: A, val second: B, val third: C) extends Tuple { }
 }
 
 

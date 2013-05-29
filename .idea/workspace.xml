@@ -19,9 +19,9 @@
     <file path="/sent_commands_are_routed_to_registered_handlers_only.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369077102999" ignored="false" />
     <file path="/sent_commands_are_routed_to_registered_handlers.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369817286678" ignored="false" />
     <file path="/a.dummy" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369817025163" ignored="false" />
-    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369859616029" ignored="false" />
+    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860450752" ignored="false" />
     <file path="/fragment.java" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369767823626" ignored="false" />
-    <file path="/DbusProxyClasses.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369859554784" ignored="false" />
+    <file path="/DbusProxyClasses.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860191012" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,21 +84,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Utils.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Utils.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="26" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="70" column="60" selection-start="2716" selection-end="2716" vertical-scroll-proportion="0.81026787">
               <folding>
-                <element signature="e#15#55#0" expanded="true" />
+                <element signature="e#15#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbusProxyClasses.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DbusProxyClasses.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="74" selection-start="253" selection-end="253" vertical-scroll-proportion="0.16831683">
+            <state line="18" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,9 @@
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="87" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
-              <folding />
+              <folding>
+                <element signature="e#18#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,14 +143,14 @@
         <option value="/mnt/repos/akkesb/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala" />
         <option value="/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala" />
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" />
-        <option value="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala" />
+        <option value="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="26" />
-    <option name="width" value="1330" />
+    <option name="width" value="1445" />
     <option name="height" value="1005" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -484,7 +486,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1330" height="1005" extended-state="0" />
+    <frame x="0" y="26" width="1445" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -500,7 +502,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.8030803" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2397882" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22059847" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -648,26 +650,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="58" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="87" selection-start="856" selection-end="856" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#18#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+        <state line="70" column="60" selection-start="2716" selection-end="2716" vertical-scroll-proportion="0.81026787">
           <folding>
-            <element signature="e#15#55#0" expanded="true" />
+            <element signature="e#15#57#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="74" selection-start="253" selection-end="253" vertical-scroll-proportion="0.16831683">
-          <folding />
         </state>
       </provider>
     </entry>

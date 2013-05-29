@@ -1,6 +1,6 @@
 package utils
 
-import akkesb.commands.{Inbox, TwoTuple}
+import akkesb.commands.{Inbox, ThreeTuple}
 import org.freedesktop.dbus.{DBusConnection, Tuple, Position}
 import scala.Exception
 
@@ -69,7 +69,9 @@ class Service(val application: String, val name: String) {
 
 object DBusTuple {
 
-    def apply(command: (String, List[(String, Any)])) = new TwoTuple("fuck", "off")
+    def apply(command: (String, List[(String, Any)])) = {
+        new ThreeTuple(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
+    }
 }
 
 
