@@ -1,29 +1,44 @@
 package utils
 
 import akkesb.queries.Get
+import akkesb.inbound.Inbox
+
 import org.freedesktop.dbus.{Tuple, Variant, DBusInterface, DBusConnection}
+import util.control.Exception
+import scala.Exception
 
-object Testing {
+object Convert {
 
-    def sendCommand(command: (String,List[(String, _)])) = {
-        new Command(command)
+    def toDBusTuple(command: (String, List[(String, Any)])) = {
+        ""
     }
-
-    def assertService(application: String, service: String) = {
-        new Service(application, service)
-    }
-
 }
 
-class Command(val command: (String, List[(String, _)])) {
+object Command {
 
-    def via(service: String, application: String) {
+    def apply(command: (String, List[(String, Any)])) = new Command(command)
+}
+
+class Command(val command: (String, List[(String, Any)])) {
+
+    def sendFrom(service: String, application: String) {
+        val connection = DBusConnection.getConnection(DBusConnection.SESSION)
+
+        connection.getRemoteObject("akkesb.$application.$service", "/incoming", classOf[Inbox]) match {
+            case inbox: Inbox => inbox.addCommand(Convert.toDBusTuple(command))
+            case _ => throw new Exception(f"failed to get remote object: $application.$service /incoming inbox")
+        }
     }
+}
+
+object Service {
+
+    def apply(application: String, name: String) = new Service(application, name)
 }
 
 class Service(val application: String, val name: String) {
 
-    def receivedCommand(command: (String, List[(String, _)])) {
+    def assertReceivedLastCommand(command: (String, List[(String, _)])) {
 
         // TODO - the second argument could be one of those type alias things (lol!)
         val lastCommand = DBus.invoke[Get, Tuple](f"akkesb.$application.$name", "/queries", classOf[Get], _.nextCommand)

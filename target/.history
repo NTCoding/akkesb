@@ -87,3 +87,5 @@ test
 compile
 test
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+gen-idea
+multi-jvm:run commmands.CommandsAreSentToRegisteredHandlers_

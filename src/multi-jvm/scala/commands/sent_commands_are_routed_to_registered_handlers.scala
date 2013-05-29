@@ -49,14 +49,17 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions {
 
     def main(args: Array[String]) {
 
-        Testing.sendCommand(("update_price", List(("productId", 1), ("price", 50))))
-               .via("marketing_service", "commands_are_sent_test")
+        Command(("update_price", List(("productId", 1), ("price", 50))))
+               .sendFrom("marketing_service", "commands_are_sent_test")
 
-        Testing.assertService("commands_are_sent_test","catalogue_service")
-               .receivedCommand(("update_price", List(("productId", 1), ("price", 50))))
+        Service("commands_are_sent_test","catalogue_service")
+               .assertReceivedLastCommand(("update_price", List(("productId", 1), ("price", 50))))
 
-        Testing.sendCommand(("stop_taking_payments_for_product", List(("productId", 1))))
-               .via("catalogue_service", "commands_are_sent_test")
+        Command(("stop_taking_payments_for_product", List(("productId", 1))))
+               .sendFrom("catalogue_service", "commands_are_sent_test")
+
+        Service("commands_are_sent_test", "payments_service")
+               .assertReceivedLastCommand(("stop_taking_payments_for_product", List(("productId", 1))))
     }
 
 }
