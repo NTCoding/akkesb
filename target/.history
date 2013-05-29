@@ -84,3 +84,6 @@ clean
 update
 compile
 test
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_

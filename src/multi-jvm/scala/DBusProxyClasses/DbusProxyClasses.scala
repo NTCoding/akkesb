@@ -1,10 +1,10 @@
 package akkesb.queries
 
-import org.freedesktop.dbus.{Variant, Tuple, DBusInterface}
+import org.freedesktop.dbus.{Tuple, DBusInterface}
 
 trait Get extends DBusInterface {
 
-      def nextCommand : Tuple[String, Array[Tuple[String, Variant]]]
+      def nextCommand : Tuple
 }
 
 
