@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130529210306"/>
+		date="20130529215223"/>
 	<dependencies>
 		<module organisation="com.novocode" name="junit-interface">
 			<revision name="0.8" status="release" pubdate="20120116153554" resolver="public" artresolver="public" homepage="http://github.com/szeiger/junit-interface/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">

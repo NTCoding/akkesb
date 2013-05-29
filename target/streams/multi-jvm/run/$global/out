@@ -7,4 +7,3 @@
 [0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=2[0m
 [0m[[0mdebug[0m] [0mStarting JVM-_TestsAndAssertions for commands.CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions[0m
 [0m[[0mdebug[0m] [0m  with JVM options: -Dmultinode.max-nodes=4 -Dmultinode.server-host=localhost -Dmultinode.host=localhost -Dmultinode.index=3[0m
-[0m[[31merror[0m] [0mFailed: commands.CommandsAreSentToRegisteredHandlers_MultiJvm_TestsAndAssertions[0m

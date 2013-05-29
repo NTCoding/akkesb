@@ -111,3 +111,7 @@ multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 est
 test
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+clean
+compile
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ -feature
