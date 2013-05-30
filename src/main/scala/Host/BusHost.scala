@@ -11,8 +11,8 @@ object BusHost {
 
         connection.requestBusName(f"akkesb.$application.$serviceName")
 
-        connection.exportObject("/commands/INCOMING", new HostInbox())
-        connection.exportObject("/commands/OUTGOING", new HostSender())
+        connection.exportObject("/commands/incoming", new HostInbox())
+        connection.exportObject("/commands/outgoing", new HostSender())
 
         new BusHost(hostName, port, application, serviceName)
     }

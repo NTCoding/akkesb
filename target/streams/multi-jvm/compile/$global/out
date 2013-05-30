@@ -2,29 +2,29 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set(/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
-[0m[[0mdebug[0m] [0mModified external sources: Set()[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set(akkesb.commands.Sender, akkesb.commands.Inbox, akkesb.commands.ThreeTuple)[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
-[0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala)[0m
-[0m[[0minfo[0m] [0mCompiling 1 Scala source to /mnt/repos/akkesb/target/multi-jvm-classes...[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1797c716, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
+[0m[[0mdebug[0m] [0m	external source: Set(/home/nicktune/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/nicktune/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/nicktune/repos/akkesb/target/multi-jvm-classes...[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 41310dad, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-d[0m
-[0m[[0mdebug[0m] [0m	/mnt/repos/akkesb/target/multi-jvm-classes[0m
+[0m[[0mdebug[0m] [0m	/home/nicktune/repos/akkesb/target/multi-jvm-classes[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk/jre/classes:/home/nick/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jdk1.7.0_21/jre/lib/resources.jar:/usr/lib/jdk1.7.0_21/jre/lib/rt.jar:/usr/lib/jdk1.7.0_21/jre/lib/sunrsasign.jar:/usr/lib/jdk1.7.0_21/jre/lib/jsse.jar:/usr/lib/jdk1.7.0_21/jre/lib/jce.jar:/usr/lib/jdk1.7.0_21/jre/lib/charsets.jar:/usr/lib/jdk1.7.0_21/jre/lib/jfr.jar:/usr/lib/jdk1.7.0_21/jre/classes:/home/nicktune/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/mnt/repos/akkesb/target/multi-jvm-classes:/mnt/repos/akkesb/target/classes:/mnt/repos/akkesb/target/test-classes:/mnt/repos/akkesb/lib/unix-0.5.jar:/mnt/repos/akkesb/lib/hexdump-0.2.jar:/mnt/repos/akkesb/lib/dbus-2.8.jar:/home/nick/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/bundles/akka-actor_2.10-2.1.4.jar:/home/nick/.ivy2/cache/com.typesafe/config/bundles/config-1.0.0.jar:/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/bundles/akka-remote_2.10-2.1.4.jar:/home/nick/.ivy2/cache/io.netty/netty/bundles/netty-3.5.8.Final.jar:/home/nick/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar:/home/nick/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/nick/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/bundles/akka-testkit_2.10-2.1.4.jar:/home/nick/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/jars/akka-remote-tests-experimental_2.10-2.1.4.jar:/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar:/home/nick/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar:/home/nick/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar:/home/nick/.ivy2/cache/junit/junit/jars/junit-4.10.jar:/home/nick/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar:/home/nick/.ivy2/cache/com.novocode/junit-interface/jars/junit-interface-0.8.jar:/home/nick/.ivy2/cache/org.scala-tools.testing/test-interface/jars/test-interface-0.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/nicktune/repos/akkesb/target/multi-jvm-classes:/home/nicktune/repos/akkesb/target/classes:/home/nicktune/repos/akkesb/target/test-classes:/home/nicktune/repos/akkesb/lib/unix-0.5.jar:/home/nicktune/repos/akkesb/lib/hexdump-0.2.jar:/home/nicktune/repos/akkesb/lib/dbus-2.8.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/bundles/akka-actor_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/com.typesafe/config/bundles/config-1.0.0.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/bundles/akka-remote_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/io.netty/netty/bundles/netty-3.5.8.Final.jar:/home/nicktune/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar:/home/nicktune/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/bundles/akka-testkit_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/com.typesafe.akka/akka-remote-tests-experimental_2.10/jars/akka-remote-tests-experimental_2.10-2.1.4.jar:/home/nicktune/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar:/home/nicktune/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar:/home/nicktune/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar:/home/nicktune/.ivy2/cache/junit/junit/jars/junit-4.10.jar:/home/nicktune/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar:/home/nicktune/.ivy2/cache/com.novocode/junit-interface/jars/junit-interface-0.8.jar:/home/nicktune/.ivy2/cache/org.scala-tools.testing/test-interface/jars/test-interface-0.5.jar[0m
 [0m[[33mwarn[0m] [0mthere were 2 feature warning(s); re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 3.572220018 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.54959771 s[0m
 [0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m

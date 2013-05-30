@@ -120,3 +120,5 @@ compile
 test
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ -feature
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ 
+gen-idea
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_

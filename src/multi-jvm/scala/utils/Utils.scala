@@ -16,7 +16,7 @@ class Command(val command: (String, List[(String, Any)])) {
 
         connection.requestBusName("commands_are_sent_test.testing_and_assertions_jvm")
 
-        connection.getRemoteObject(f"akkesb.$application.$service", "/commands/OUTGOING", classOf[Sender]) match {
+        connection.getRemoteObject(f"akkesb.$application.$service", "/commands/outgoing", classOf[Sender]) match {
             case sender: Sender => sender.send(DBusTuple(command))
             case _ => throw new Exception(f"failed to get remote object: $application.$service /commands Inbox")
         }
@@ -57,7 +57,7 @@ class Service(val application: String, val name: String) {
 
     def assertReceivedLastCommand(command: (String, List[(String, _)])) {
        val connection = DBusConnection.getConnection(DBusConnection.SESSION)
-       val receivedCommand = connection.getRemoteObject(f"akkesb.$application.$name", "/commands/INCOMING", classOf[Inbox]) match {
+       val receivedCommand = connection.getRemoteObject(f"akkesb.$application.$name", "/commands/incoming", classOf[Inbox]) match {
            case inbox: Inbox => inbox.nextMessage
            case _ => throw new Exception(f"failed to get remote object: $application.$name /commands/INCOMING    Inbox")
        }
@@ -72,7 +72,9 @@ class Service(val application: String, val name: String) {
 object DBusTuple {
 
     def apply(command: (String, List[(String, Any)])) = {
-        new ThreeTuple(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
+        //new ThreeTuple(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
+       //new ThreeTuple[String, Array[String], Array[String]]("yeah", Array("yeah"), Array("yeah"))
+        new ThreeTuple("yeah", "yeah", "yeah")
     }
 }
 

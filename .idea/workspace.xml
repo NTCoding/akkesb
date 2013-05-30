@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a83a8082-53b6-487f-9022-58b27264b9c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Host/BusHost.scala" afterPath="$PROJECT_DIR$/src/main/scala/Host/BusHost.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala" afterPath="$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" afterPath="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="akkesb.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369892988116" ignored="false" />
+    <file path="/Dummy.txt" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369903412090" ignored="false" />
     <file path="/a.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1368737988761" ignored="false" />
     <file path="/Sending_messages_between_hosts.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1368822974527" ignored="false" />
     <file path="/Build.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1368868056860" ignored="false" />
@@ -20,12 +19,12 @@
     <file path="/sent_commands_are_routed_to_registered_handlers_only.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369077102999" ignored="false" />
     <file path="/sent_commands_are_routed_to_registered_handlers.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860861942" ignored="false" />
     <file path="/a.dummy" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369817025163" ignored="false" />
-    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369896042722" ignored="false" />
+    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369905523934" ignored="false" />
     <file path="/fragment.java" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369767823626" ignored="false" />
     <file path="/DbusProxyClasses.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860191012" ignored="false" />
-    <file path="/BusHost.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369896022174" ignored="false" />
+    <file path="/BusHost.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369904112413" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/scala/Host/package.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369893052491" ignored="false" />
-    <file path="/Inbox.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369895820762" ignored="false" />
+    <file path="/Inbox.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369905815507" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +32,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="false" />
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -43,6 +39,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -50,7 +47,6 @@
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
@@ -67,7 +63,6 @@
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
@@ -79,7 +74,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -88,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Utils.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Utils.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="68" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.27382258">
+            <state line="76" column="20" selection-start="3115" selection-end="3115" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#15#66#0" expanded="true" />
               </folding>
@@ -99,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Inbox.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Inbox.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="10" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="3" column="39" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,15 +109,6 @@
               <folding>
                 <element signature="e#14#56#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sent_commands_are_routed_to_registered_handlers.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="48" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -158,17 +143,16 @@
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" />
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/DBusProxyClasses/DbusProxyClasses.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/akkesb/commands/DbusProxyClasses.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Host/BusHost.scala" />
         <option value="$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="26" />
-    <option name="width" value="1928" />
-    <option name="height" value="1009" />
+    <option name="x" value="1279" />
+    <option name="width" value="1282" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,40 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="akkesb-build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,20 +195,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akkesb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,6 +312,40 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="akkesb-build">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,8 +361,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -407,6 +377,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -434,19 +417,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -525,7 +495,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="26" width="1928" height="1009" extended-state="6" />
+    <frame x="1279" y="0" width="1282" height="1004" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -541,7 +511,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.8030803" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19166666" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14181523" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -577,7 +547,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -587,10 +557,6 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -604,7 +570,6 @@
     <option name="ACTIVE_VCS_NAME" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
@@ -671,16 +636,16 @@
         <state line="6" column="22" selection-start="172" selection-end="172" vertical-scroll-proportion="0.09615385" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala">
+    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="10" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+        <state line="51" column="12" selection-start="1658" selection-end="1658" vertical-scroll-proportion="0.6274066">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.1-sources.jar!/scala/Array.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="48" selection-start="1534" selection-end="1534" vertical-scroll-proportion="0.0">
+        <state line="502" column="12" selection-start="19780" selection-end="19780" vertical-scroll-proportion="0.55402297">
           <folding />
         </state>
       </provider>
@@ -696,10 +661,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/multi-jvm/scala/utils/Utils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="68" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.27382258">
+        <state line="76" column="20" selection-start="3115" selection-end="3115" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#15#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/akkesb/commands/Inbox.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
