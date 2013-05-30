@@ -9,16 +9,10 @@ trait Inbox extends DBusInterface {
 
 trait Sender extends DBusInterface {
 
-   // def send(command: ThreeTuple[String, Array[String], Array[String]])
-
-   def send(command: DBusAkkesbCommand)
+   def send(name: String, keys: Array[String], values: Array[String])
 }
 
 class HostInbox extends Inbox {
-
-    def addCommand(command: DBusAkkesbCommand) {
-        println("received request to add command - but not implemented yet")
-    }
 
     def nextMessage : DBusAkkesbCommand = {
         throw new Exception("Not implemented next message yet")
@@ -33,13 +27,7 @@ class HostSender extends Sender {
 
     def isRemote: Boolean = false
 
-    /*
-    def send(command: ThreeTuple[String, Array[String], Array[String]]) {
-        println("received request to send message - not implemented yet")
-    }
-    */
-
-    def send(command: DBusAkkesbCommand) {println("command sent")}
+    def send(name: String, keys: Array[String], values: Array[String]) {println("command not sent - sent not implemented")}
 }
 
 

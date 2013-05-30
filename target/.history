@@ -133,3 +133,5 @@ multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 copl
 compile
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+compile
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_

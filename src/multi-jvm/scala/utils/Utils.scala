@@ -4,6 +4,7 @@ import org.freedesktop.dbus.{DBusConnection, Tuple}
 import scala.Exception
 import akkesb.commands.{DBusAkkesbCommand, Sender, Inbox}
 
+
 object Command {
 
     def apply(command: (String, List[(String, Any)])) = new Command(command)
@@ -17,7 +18,7 @@ class Command(val command: (String, List[(String, Any)])) {
         connection.requestBusName("commands_are_sent_test.testing_and_assertions_jvm")
 
         connection.getRemoteObject(f"akkesb.$application.$service", "/commands/outgoing", classOf[Sender]) match {
-            case sender: Sender => sender.send(DBusTuple(command))
+            case sender: Sender => sender.send(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
             case _ => throw new Exception(f"failed to get remote object: $application.$service /commands Inbox")
         }
     }
@@ -70,13 +71,6 @@ class Service(val application: String, val name: String) {
             case received: DBusAkkesbCommand => Command(command).assertIdenticalTo(received)
             case _  => throw new Exception("Did not get a tuple back from dbus")
         }
-    }
-}
-
-object DBusTuple {
-
-    def apply(command: (String, List[(String, Any)])) = {
-        new DBusAkkesbCommand()
     }
 }
 
