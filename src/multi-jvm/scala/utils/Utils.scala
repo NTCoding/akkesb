@@ -1,8 +1,8 @@
 package utils
 
-import akkesb.commands.{Inbox, ThreeTuple}
-import org.freedesktop.dbus.{DBusConnection, Tuple, Position}
+import org.freedesktop.dbus.{DBusConnection, Tuple}
 import scala.Exception
+import akkesb.commands.{Sender, ThreeTuple, Inbox}
 
 object Command {
 
@@ -16,8 +16,8 @@ class Command(val command: (String, List[(String, Any)])) {
 
         connection.requestBusName("commands_are_sent_test.testing_and_assertions_jvm")
 
-        connection.getRemoteObject(f"akkesb.$application.$service", "/commands", classOf[Inbox]) match {
-            case inbox: Inbox => inbox.addCommand(DBusTuple(command))
+        connection.getRemoteObject(f"akkesb.$application.$service", "/commands/OUTGOING", classOf[Sender]) match {
+            case sender: Sender => sender.send(DBusTuple(command))
             case _ => throw new Exception(f"failed to get remote object: $application.$service /commands Inbox")
         }
     }
@@ -57,9 +57,9 @@ class Service(val application: String, val name: String) {
 
     def assertReceivedLastCommand(command: (String, List[(String, _)])) {
        val connection = DBusConnection.getConnection(DBusConnection.SESSION)
-       val receivedCommand = connection.getRemoteObject(f"akkesb.$application.$name", "/commands", classOf[Inbox]) match {
+       val receivedCommand = connection.getRemoteObject(f"akkesb.$application.$name", "/commands/INCOMING", classOf[Inbox]) match {
            case inbox: Inbox => inbox.nextMessage
-           case _ => throw new Exception(f"failed to get remote object: $application.$name /commands Inbox")
+           case _ => throw new Exception(f"failed to get remote object: $application.$name /commands/INCOMING    Inbox")
        }
 
        receivedCommand match {

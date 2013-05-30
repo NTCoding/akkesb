@@ -115,3 +115,8 @@ clean
 compile
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ -feature
+clean
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ -feature
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ 
