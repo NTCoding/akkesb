@@ -4,36 +4,23 @@ import org.freedesktop.dbus._
 
 trait Inbox extends DBusInterface {
 
-    def nextMessage : ThreeTuple[String, Array[String], Array[String]]
-}
-
-final class ThreeTuple[A, B, C](f: A, s: B, t: C) extends Tuple {
-
-    @Position(0)
-    val first = f
-
-    @Position(1)
-    val second = s
-
-    @Position(2)
-    val third = t
-
+    def nextMessage : DBusAkkesbCommand
 }
 
 trait Sender extends DBusInterface {
 
    // def send(command: ThreeTuple[String, Array[String], Array[String]])
 
-   def send(command: ThreeTuple[String, String, String])
+   def send(command: DBusAkkesbCommand)
 }
 
 class HostInbox extends Inbox {
 
-    def addCommand(command: ThreeTuple[String, Array[String], Array[String]]) {
+    def addCommand(command: DBusAkkesbCommand) {
         println("received request to add command - but not implemented yet")
     }
 
-    def nextMessage : ThreeTuple[String, Array[String], Array[String]] = {
+    def nextMessage : DBusAkkesbCommand = {
         throw new Exception("Not implemented next message yet")
     }
 
@@ -52,7 +39,7 @@ class HostSender extends Sender {
     }
     */
 
-    def send(command: ThreeTuple[String, String, String]) {println("command sent")}
+    def send(command: DBusAkkesbCommand) {println("command sent")}
 }
 
 

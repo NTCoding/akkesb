@@ -742,7 +742,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 739ms :: artifacts dl 31ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 672ms :: artifacts dl 29ms[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 compile produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 runtime produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 test produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-test.xml[0m
@@ -756,5 +756,5 @@
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 sources produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-sources.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 docs produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 pom produced in /home/nicktune/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (739ms resolve - 31ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (672ms resolve - 29ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

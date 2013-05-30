@@ -2,7 +2,7 @@ package utils
 
 import org.freedesktop.dbus.{DBusConnection, Tuple}
 import scala.Exception
-import akkesb.commands.{Sender, ThreeTuple, Inbox}
+import akkesb.commands.{DBusAkkesbCommand, Sender, Inbox}
 
 object Command {
 
@@ -22,8 +22,9 @@ class Command(val command: (String, List[(String, Any)])) {
         }
     }
 
-    def assertIdenticalTo(actual: Tuple) {
+    def assertIdenticalTo(actual: DBusAkkesbCommand) {
 
+        /*
         // TODO - could cast this to a dbus tuple and do comparison - probably prefer not to
         val actualName = actual.getParameters()(0).toString
         val commandData = actual.getParameters()(1).asInstanceOf[Array[AnyRef]]
@@ -41,6 +42,9 @@ class Command(val command: (String, List[(String, Any)])) {
             if (!expectedKey.equals(actualKey)) fail(f"Item: $i has wrong key: $actualKey. Should have been: $expectedKey")
             if (!expectedValue.equals(actualValue)) fail(f"Item $i has wrong value: $actualValue. Should have been: $expectedValue")
         }
+        */
+
+        fail("blah")
     }
 
     def fail(message: String) {
@@ -63,7 +67,7 @@ class Service(val application: String, val name: String) {
        }
 
        receivedCommand match {
-            case received: Tuple => Command(command).assertIdenticalTo(received)
+            case received: DBusAkkesbCommand => Command(command).assertIdenticalTo(received)
             case _  => throw new Exception("Did not get a tuple back from dbus")
         }
     }
@@ -72,9 +76,7 @@ class Service(val application: String, val name: String) {
 object DBusTuple {
 
     def apply(command: (String, List[(String, Any)])) = {
-        //new ThreeTuple(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
-       //new ThreeTuple[String, Array[String], Array[String]]("yeah", Array("yeah"), Array("yeah"))
-        new ThreeTuple("yeah", "yeah", "yeah")
+        new DBusAkkesbCommand()
     }
 }
 

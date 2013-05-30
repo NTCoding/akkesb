@@ -122,3 +122,14 @@ multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ -feature
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_ 
 gen-idea
 multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+clean
+update
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+compile
+test
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
+copl
+compile
+multi-jvm:run commands.CommandsAreSentToRegisteredHandlers_
