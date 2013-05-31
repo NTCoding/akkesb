@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="hexdump-0.2.jar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/hexdump-0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hexdump-0.2.jar!/"></root>
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC> </JAVADOC>
+    <SOURCES> </SOURCES>
   </library>
 </component>

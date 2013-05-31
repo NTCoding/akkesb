@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130530210037"/>
+		date="20130531070639"/>
 	<dependencies>
 		<module organisation="com.typesafe.akka" name="akka-remote_2.10">
 			<revision name="2.1.4" status="release" pubdate="20130514133951" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">

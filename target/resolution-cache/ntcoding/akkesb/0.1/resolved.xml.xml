@@ -4,7 +4,7 @@
 		module="akkesb"
 		revision="0.1"
 		status="integration"
-		publication="20130530210037"
+		publication="20130531070639"
 	>
 		<description>
 		akkesb
@@ -40,6 +40,7 @@
 		<dependency org="org.scalatest" name="scalatest_2.10" rev="1.9.1" conf="test->default(compile)"/>
 		<dependency org="junit" name="junit" rev="4.10" conf="test->default(compile)"/>
 		<dependency org="com.novocode" name="junit-interface" rev="0.8" conf="test->default(compile)"/>
+		<dependency org="org.mockito" name="mockito-all" rev="1.9.5" conf="test->default(compile)"/>
 		<exclude org="org.scala-lang" module="scala-library" artifact="*" type="jar" ext="*" matcher="exact"/>
 		<exclude org="org.scala-lang" module="scala-compiler" artifact="*" type="jar" ext="*" matcher="exact"/>
 		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.10.1"/>

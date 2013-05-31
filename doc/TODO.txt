@@ -10,3 +10,5 @@ TODO
 	+ point people to the design diagrams
 	+ list all dependencies that need to be installed
 	+ mention there will be a sample application coming soon
+
+4. Investigate why intellij is so out of sync with sbt (sbt works when intellij doesn't)
