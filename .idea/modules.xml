@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea_modules/akkesb-build.iml" filepath="$PROJECT_DIR$/.idea_modules/akkesb-build.iml" ></module>
-      <module fileurl="file://$PROJECT_DIR$/.idea_modules/akkesb.iml" filepath="$PROJECT_DIR$/.idea_modules/akkesb.iml" ></module>
+      <module fileurl="file://$PROJECT_DIR$/.idea_modules/akkesb.iml" filepath="$PROJECT_DIR$/.idea_modules/akkesb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea_modules/akkesb-build.iml" filepath="$PROJECT_DIR$/.idea_modules/akkesb-build.iml" />
     </modules>
   </component>
 </project>
+

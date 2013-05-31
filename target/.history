@@ -140,3 +140,15 @@ clean
 update
 compile
 gen-idea
+reload
+update
+gen-idea
+reload
+update
+clean
+compile
+test
+gen-idea
+reload
+update
+gen-idea

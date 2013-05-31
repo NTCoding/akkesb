@@ -12,3 +12,6 @@ TODO
 	+ mention there will be a sample application coming soon
 
 4. Investigate why intellij is so out of sync with sbt (sbt works when intellij doesn't)
+
+5. Create some tests that simulate failures in the actor system
+	+ e.g. what if the actor that receives commands dies?
