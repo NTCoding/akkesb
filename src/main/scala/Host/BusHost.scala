@@ -1,18 +1,18 @@
 package Host
 
 import org.freedesktop.dbus.DBusConnection
-import akkesb.commands.{HostSender, HostInbox, Inbox}
+import akkesb.commands._
 
 object BusHost {
 
-    def apply(hostName: String, port: String, application: String, serviceName: String) =  {
+    def apply(hostName: String, port: String, application: String, serviceName: String, handler: MessageHandler, sender: MessageSender) =  {
 
         val connection = DBusConnection.getConnection(DBusConnection.SESSION)
 
         connection.requestBusName(f"akkesb.$application.$serviceName")
 
-        connection.exportObject("/commands/incoming", new HostInbox())
-        connection.exportObject("/commands/outgoing", new HostSender())
+        connection.exportObject("/messages/handling", handler)
+        connection.exportObject("/messages/sending", sender)
 
         new BusHost(hostName, port, application, serviceName)
     }

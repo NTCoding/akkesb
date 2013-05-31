@@ -20,6 +20,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../src/test/scala" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/../src/test/resources" isTestSource="true" />
+      <sourceFolder url="file:///mnt/repos/akkesb/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file:///mnt/repos/akkesb/src/multi-jvm/scala" isTestSource="true" />
+      <sourceFolder url="file:///mnt/repos/akkesb/src/test/scala" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../target" />
     </content>
     <orderEntry type="inheritedJdk" />

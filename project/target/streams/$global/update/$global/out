@@ -1,144 +1,76 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/nicktune/repos/akkesb/project/}default-3cc573...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#default-3cc573;0.1-SNAPSHOT[0m
+[0m[[0minfo[0m] [0mUpdating {file:/mnt/repos/akkesb/project/}default-c74d22...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#default-c74d22;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving default#default-ae37ef;0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: default#default-ae37ef;0.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m	found default#default-ae37ef;0.0 in inter-project[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 in typesafe-ivy-releases[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-core;2.1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-core;2.1.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbteclipse#sbteclipse-core;2.1.2[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.typesafe.sbteclipse#sbteclipse-core;2.1.2[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.sbteclipse#sbteclipse-core;2.1.2 in typesafe-ivy-releases[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.9.2;6.0.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.9.2;6.0.4 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.9.2;6.0.4[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scalaz#scalaz-core_2.9.2;6.0.4[0m
-[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.9.2;6.0.4 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.9.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.9.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.9.2[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.9.2[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.9.2 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.github.mpeltonen#sbt-idea;1.2.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.2.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.mpeltonen#sbt-idea;1.2.0[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.github.mpeltonen#sbt-idea;1.2.0[0m
-[0m[[0mdebug[0m] [0m	found com.github.mpeltonen#sbt-idea;1.2.0 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving default#default-c4fa65;0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: default#default-c4fa65;0.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m	found default#default-c4fa65;0.0 in inter-project[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.github.mpeltonen#sbt-idea;1.3.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.3.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.mpeltonen#sbt-idea;1.3.0[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.github.mpeltonen#sbt-idea;1.3.0[0m
+[0m[[0mdebug[0m] [0m	found com.github.mpeltonen#sbt-idea;1.3.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.0.1[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: commons-io#commons-io;2.0.1[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.0.1 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-multi-jvm;0.3.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-multi-jvm;0.3.4 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-multi-jvm;0.3.4[0m
-[0m[[0mdebug[0m] [0m		tried http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-multi-jvm;0.3.4[0m
-[0m[[0mdebug[0m] [0m		=> http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml (0.3.4)[0m
-[0m[[0mdebug[0m] [0mdownloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-multi-jvm;0.3.4!ivy.xml(ivy.original) (394ms)[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-multi-jvm;0.3.4[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.typesafe.sbt#sbt-multi-jvm;0.3.4[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-multi-jvm;0.3.4 in sbt-plugin-releases[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.eed3si9n#sbt-assembly;0.8.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.eed3si9n#sbt-assembly;0.8.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.eed3si9n#sbt-assembly;0.8.3[0m
-[0m[[0mdebug[0m] [0m		tried http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.eed3si9n#sbt-assembly;0.8.3[0m
-[0m[[0mdebug[0m] [0m		=> http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml (0.8.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.eed3si9n#sbt-assembly;0.8.3!ivy.xml(ivy.original) (383ms)[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.eed3si9n#sbt-assembly;0.8.3[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.eed3si9n#sbt-assembly;0.8.3[0m
 [0m[[0mdebug[0m] [0m	found com.eed3si9n#sbt-assembly;0.8.3 in sbt-plugin-releases[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-sbt#sbt;0.12.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.12.3 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-sbt#sbt;0.12.3[0m
@@ -169,6 +101,11 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-sbt#launcher-interface;0.12.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-sbt#launcher-interface;0.12.3 in typesafe-ivy-releases[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.9.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.9.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.9.2[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.9.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.9.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#launcher-interface;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->master][0m
@@ -655,39 +592,29 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-sbt#main;0.12.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#main;0.12.3->org.scala-sbt#actions;0.12.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#actions;0.12.3->org.scala-sbt#classpath;0.12.3 [compile->default(compile)][0m
@@ -999,65 +926,45 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->default#default-ae37ef;0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2->com.typesafe.sbteclipse#sbteclipse-core;2.1.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.9.2;6.0.4->org.scala-lang#scala-library;2.9.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.1.2->org.scalaz#scalaz-core_2.9.2;6.0.4 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.2.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-ae37ef;0.0->com.github.mpeltonen#sbt-idea;1.2.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->default#default-c4fa65;0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.mpeltonen#sbt-idea;1.3.0->commons-io#commons-io;2.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c4fa65;0.0->com.github.mpeltonen#sbt-idea;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->com.typesafe.sbt#sbt-multi-jvm;0.3.4 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-multi-jvm;0.3.4->com.eed3si9n#sbt-assembly;0.8.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-sbt#sbt;0.12.3 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-sbt#main;0.12.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#main;0.12.3->org.scala-sbt#actions;0.12.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#actions;0.12.3->org.scala-sbt#classpath;0.12.3 [compile->default(compile)][0m
@@ -1369,37 +1276,24 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-sbt#sbt;0.12.3->org.scala-lang#scala-library;2.9.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#default-3cc573;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#default-c74d22;0.1-SNAPSHOT->org.scala-lang#scala-library;2.9.2 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-3cc573;0.1-SNAPSHOT [pom][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/default/default-3cc573/scala_2.9.2/sbt_0.12/0.1-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#default-c74d22;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /mnt/repos/akkesb/project/target/resolution-cache/default/default-c74d22/scala_2.9.2/sbt_0.12/0.1-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m		tried http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/jars/sbt-multi-jvm.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/jars/sbt-multi-jvm.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/jars/sbt-multi-jvm.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/jars/sbt-multi-jvm.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-multi-jvm/scala_2.9.2/sbt_0.12/0.3.4/jars/sbt-multi-jvm.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-multi-jvm;0.3.4!sbt-multi-jvm.jar (807ms)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2!sbteclipse-plugin.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.2.0!sbt-idea.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-core;2.1.2!sbteclipse-core.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.9.2;6.0.4!scalaz-core_2.9.2.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-multi-jvm;0.3.4!sbt-multi-jvm.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.3.0!sbt-idea.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.0.1!commons-io.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/jars/sbt-assembly.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/jars/sbt-assembly.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/jars/sbt-assembly.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/jars/sbt-assembly.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.9.2/sbt_0.12/0.8.3/jars/sbt-assembly.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.eed3si9n#sbt-assembly;0.8.3!sbt-assembly.jar (569ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.eed3si9n#sbt-assembly;0.8.3!sbt-assembly.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.12.3!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.12.3!main.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.12.3!compiler-interface-src.jar[0m
@@ -1441,18 +1335,18 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#cache;0.12.3!cache.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#test-agent;0.12.3!test-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2999ms :: artifacts dl 1416ms[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT compile produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT runtime produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT test produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT provided produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT optional produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT compile-internal produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT runtime-internal produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT test-internal produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT plugin produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT sources produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT docs produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#default-3cc573;0.1-SNAPSHOT pom produced in /home/nicktune/repos/akkesb/project/target/resolution-cache/reports/default-default-3cc573-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2999ms resolve - 1416ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1183ms :: artifacts dl 44ms[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT compile produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT runtime produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT test produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT provided produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT optional produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT compile-internal produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT runtime-internal produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT test-internal produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT plugin produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT sources produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT docs produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT pom produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1183ms resolve - 44ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
