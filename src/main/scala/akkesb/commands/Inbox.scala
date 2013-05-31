@@ -21,13 +21,15 @@ class HostInbox extends Inbox {
     def isRemote: Boolean = false
 }
 
-
-
 class HostSender extends Sender {
 
     def isRemote: Boolean = false
 
-    def send(name: String, keys: Array[String], values: Array[String]) {println("command not sent - sent not implemented")}
+    def send(name: String, keys: Array[String], values: Array[String]) {
+        // find the service that owns this command
+
+        // send the command to the remote actor named service_actor
+    }
 }
 
 
