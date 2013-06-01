@@ -22,15 +22,15 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
 
         BusHost(hostName, port, application, service, handler, sender, connection)
 
-        "it registers as a service on akkesb using the supplied application and service name" in {
+        "it registers as a service on dbus using the supplied application and service name" in {
             verify(connection) requestBusName f"akkesb.$application.$service"
         }
 
-        "it exports the supplied command handler on akkesb in the messages/incoming path" in {
+        "it exports the supplied command handler on dbus in the messages/incoming path" in {
             verify(connection) exportObject("/messages/incoming", handler)
         }
 
-        "it exports the supplied command sender on akkesb in the messages/outgoing path" in {
+        "it exports the supplied command sender on dbus in the messages/outgoing path" in {
             verify(connection) exportObject("/messages/outgoing", sender)
         }
     }
