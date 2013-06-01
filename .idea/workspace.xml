@@ -6,9 +6,9 @@
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/cache/example/global/update/inputs" afterPath="/mnt/repos/akkesb/target/cache/example/global/update/inputs" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/cache/example/global/update/output" afterPath="/mnt/repos/akkesb/target/cache/example/global/update/output" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/.history" afterPath="/mnt/repos/akkesb/target/.history" />
+      <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala" afterPath="/mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/src/test/scala/BusHost_test.scala" afterPath="/mnt/repos/akkesb/src/test/scala/BusHost_test.scala" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/.idea_modules/akkesb.iml" afterPath="/mnt/repos/akkesb/.idea_modules/akkesb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/build.sbt" afterPath="/mnt/repos/akkesb/build.sbt" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile-internal.xml" afterPath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile-internal.xml" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile.xml" afterPath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile.xml" />
@@ -26,7 +26,6 @@
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/streams/$global/update/$global/out" afterPath="/mnt/repos/akkesb/target/streams/$global/update/$global/out" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.properties" afterPath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.xml" afterPath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/.idea/workspace.xml" afterPath="/mnt/repos/akkesb/.idea/workspace.xml" />
     </list>
     <ignored path="akkesb.iws" />
@@ -44,11 +43,11 @@
     <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370025826581" ignored="false" />
     <file path="/fragment.java" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370088824870" ignored="false" />
     <file path="/DbusProxyClasses.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860191012" ignored="false" />
-    <file path="/BusHost.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370090887433" ignored="false" />
+    <file path="/BusHost.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370094753135" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/scala/Host/package.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369893052491" ignored="false" />
     <file path="/Inbox.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370022784694" ignored="false" />
     <file path="/DBusAkkesbCommand.java" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369944251068" ignored="false" />
-    <file path="/BusHost_test.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370094438002" ignored="false" />
+    <file path="/BusHost_test.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370094665674" ignored="false" />
     <file path="/SBT" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370024890846" ignored="false" />
     <file path="/mnt/repos/akkesb/target/resolution-cache/reports/ivy-report.xsl" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370085776672" ignored="false" />
     <file path="/mnt/repos/akkesb/src/main/scala/akkesb/package.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370088861673" ignored="false" />
@@ -128,7 +127,7 @@
       <file leaf-file-name="BusHost.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.15111111">
+            <state line="11" column="51" selection-start="479" selection-end="479" vertical-scroll-proportion="0.20777778">
               <folding />
             </state>
           </provider>
@@ -137,7 +136,7 @@
       <file leaf-file-name="BusHost_test.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///mnt/repos/akkesb/src/test/scala/BusHost_test.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
+            <state line="12" column="54" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#14#34#0" expanded="true" />
               </folding>
@@ -645,7 +644,7 @@
     </entry>
     <entry file="file:///mnt/repos/akkesb/src/test/scala/BusHost_test.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0">
+        <state line="12" column="54" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#14#34#0" expanded="true" />
           </folding>
@@ -654,7 +653,7 @@
     </entry>
     <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.15111111">
+        <state line="11" column="51" selection-start="479" selection-end="479" vertical-scroll-proportion="0.20777778">
           <folding />
         </state>
       </provider>

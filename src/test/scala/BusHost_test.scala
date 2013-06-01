@@ -2,8 +2,7 @@ package test
 
 import akkesb.dbus._
 import akkesb.host.BusHost
-import org.freedesktop.dbus.{DBusInterface, DBusAsyncReply, DBusConnection}
-import org.scalatest.{OneInstancePerTest, BeforeAndAfter, BeforeAndAfterAll, FreeSpec}
+import org.scalatest.{OneInstancePerTest, FreeSpec}
 import scala.language.postfixOps
 import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
@@ -18,6 +17,7 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
     val sender = new DBusMessageSender()
     val connection = mock[TestableDBusConnection]
 
+
     "When starting up the bus host" - {
 
         BusHost(hostName, port, application, service, handler, sender, connection)
@@ -27,15 +27,13 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
         }
 
         "it exports the supplied command handler on akkesb in the messages/incoming path" in {
-
+            verify(connection) exportObject("/messages/incoming", handler)
         }
 
         "it exports the supplied command sender on akkesb in the messages/outgoing path" in {
-
+            verify(connection) exportObject("/messages/outgoing", sender)
         }
     }
-
-
 }
 
 

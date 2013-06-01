@@ -252,3 +252,5 @@ compile
 test
 gen-idea
 test
+sbt
+test
