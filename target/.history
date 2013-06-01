@@ -258,3 +258,30 @@ multi-jvm
 multi-jvm:run
 multi-jvm-tests
 multi-jvm:run multijvm.commands.CommandsAreSentToRegisteredHandlers_
+multi-jvm:test
+reload
+multi-jvm:test
+clean
+update
+compile
+test
+multi-jvm:discovered-main-classes
+multi-jvm:multi-jvm-app
+multi-jvm:multi-jvm-apps
+multi-jvm:unmanaged-source-directories
+multi:jvm:sources
+multi-jvm:sources
+multi-jvm:multi-jvm-app-names
+multi:jvm | grep "yeah"
+multi-jvm:target | grep "yeah"
+multi-jvm:target 
+multi-jvm:unmanaged-resource-directories
+multi-jvm:name
+multi-jvm:settings-data
+multi-jvm:multi-jvm-marker
+test
+multi-jvm:test
+TEST
+test
+last test:test
+test

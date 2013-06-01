@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130601144419"/>
+		date="20130601214209"/>
 	<dependencies>
 		<module organisation="org.mockito" name="mockito-all">
 			<revision name="1.9.5" status="release" pubdate="20121014101023" resolver="public" artresolver="public" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">

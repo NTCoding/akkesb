@@ -300,7 +300,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb;0.1->org.scalatest#scalatest_2.10;2.0.M6-SNAP17 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb;0.1->junit#junit;4.10 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving junit#junit;4.10 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@521bcabb[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70c5a299[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: junit#junit;4.10[0m
 [0m[[0mdebug[0m] [0m	found junit#junit;4.10 in public[0m
@@ -318,7 +318,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb;0.1->junit#junit;4.10 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ntcoding#akkesb;0.1->com.novocode#junit-interface;0.8 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.novocode#junit-interface;0.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1dc1b136[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@568a5fd5[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.novocode#junit-interface;0.8[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.novocode#junit-interface;0.8[0m
 [0m[[0mdebug[0m] [0m	found com.novocode#junit-interface;0.8 in public[0m
@@ -767,7 +767,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.8!junit-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 577ms :: artifacts dl 37ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 385ms :: artifacts dl 22ms[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 compile produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 runtime produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 test produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-test.xml[0m
@@ -781,5 +781,5 @@
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 sources produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-sources.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 docs produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for ntcoding#akkesb;0.1 pom produced in /mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (577ms resolve - 37ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (385ms resolve - 22ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

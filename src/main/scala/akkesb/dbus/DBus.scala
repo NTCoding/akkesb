@@ -1,6 +1,7 @@
 package akkesb.dbus
 
 import org.freedesktop.dbus._
+import akka.actor.ActorRef
 
 trait MessageSender extends DBusInterface {
 
@@ -15,6 +16,10 @@ class DBusMessageSender extends MessageSender {
         // find the service that owns this command
 
         // send the command to the remote actor named service_actor
+    }
+
+    def setActor(actor: ActorRef) {
+        println("set actor not implemented")
     }
 }
 
