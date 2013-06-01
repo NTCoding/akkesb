@@ -222,3 +222,33 @@ compile
 test
 last test:test
 test
+last test:test
+test
+last test:test
+test
+last test:test
+test
+last test:test
+test
+last test:test
+test
+last test:test
+test
+last test:test
+test
+compile
+test
+last test:test
+test
+last test:test
+test
+reload
+update
+gen-idea
+test
+reload
+update
+compile
+test
+gen-idea
+test

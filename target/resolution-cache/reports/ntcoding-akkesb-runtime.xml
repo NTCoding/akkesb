@@ -7,8 +7,32 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130601110640"/>
+		date="20130601144419"/>
 	<dependencies>
+		<module organisation="org.mockito" name="mockito-all">
+			<revision name="1.9.5" status="release" pubdate="20121014101023" resolver="public" artresolver="public" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
+				<metadata-artifact status="no" details="" size="2352" time="0" location="/home/nick/.ivy2/cache/org.mockito/mockito-all/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.pom"/>
+				<caller organisation="ntcoding" name="akkesb" conf="compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="mockito-all" type="jar" ext="jar" status="no" details="" size="1581066" time="0" location="/home/nick/.ivy2/cache/org.mockito/mockito-all/jars/mockito-all-1.9.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalatest" name="scalatest_2.10">
+			<revision name="2.0.M6-SNAP17" status="release" pubdate="20130513194309" resolver="public" artresolver="public" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6443" time="0" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/ivy-2.0.M6-SNAP17.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0.M6-SNAP17/scalatest_2.10-2.0.M6-SNAP17.pom"/>
+				<caller organisation="ntcoding" name="akkesb" conf="compile, runtime" rev="2.0.M6-SNAP17" rev-constraint-default="2.0.M6-SNAP17" rev-constraint-dynamic="2.0.M6-SNAP17" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scalatest_2.10" type="jar" ext="jar" status="no" details="" size="6145938" time="0" location="/home/nick/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-2.0.M6-SNAP17.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0.M6-SNAP17/scalatest_2.10-2.0.M6-SNAP17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.akka" name="akka-remote_2.10">
 			<revision name="2.1.4" status="release" pubdate="20130514133951" resolver="public" artresolver="public" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -86,6 +110,7 @@
 			<revision name="2.10.1" status="release" pubdate="20130312230420" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="0">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
 				<metadata-artifact status="no" details="" size="2392" time="0" location="/home/nick/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.pom"/>
+				<caller organisation="org.scalatest" name="scalatest_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.0" callerrev="2.0.M6-SNAP17"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="2.1.4"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="2.1.4"/>
 				<caller organisation="ntcoding" name="akkesb" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="0.1"/>
