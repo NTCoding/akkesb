@@ -8,6 +8,7 @@
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/.history" afterPath="/mnt/repos/akkesb/target/.history" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala" afterPath="/mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/src/test/scala/BusHost_test.scala" afterPath="/mnt/repos/akkesb/src/test/scala/BusHost_test.scala" />
+      <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala" afterPath="/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/.idea_modules/akkesb.iml" afterPath="/mnt/repos/akkesb/.idea_modules/akkesb.iml" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/build.sbt" afterPath="/mnt/repos/akkesb/build.sbt" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile-internal.xml" afterPath="/mnt/repos/akkesb/target/resolution-cache/reports/ntcoding-akkesb-compile-internal.xml" />
@@ -26,6 +27,7 @@
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/streams/$global/update/$global/out" afterPath="/mnt/repos/akkesb/target/streams/$global/update/$global/out" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.properties" afterPath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.xml" afterPath="/mnt/repos/akkesb/target/resolution-cache/ntcoding/akkesb/0.1/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="/mnt/repos/akkesb/.idea/workspace.xml" afterPath="/mnt/repos/akkesb/.idea/workspace.xml" />
     </list>
     <ignored path="akkesb.iws" />
@@ -40,7 +42,7 @@
     <file path="/sent_commands_are_routed_to_registered_handlers_only.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369077102999" ignored="false" />
     <file path="/sent_commands_are_routed_to_registered_handlers.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370090176924" ignored="false" />
     <file path="/a.dummy" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370089469186" ignored="false" />
-    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370025826581" ignored="false" />
+    <file path="/Utils.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370102723348" ignored="false" />
     <file path="/fragment.java" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370088824870" ignored="false" />
     <file path="/DbusProxyClasses.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1369860191012" ignored="false" />
     <file path="/BusHost.scala" changelist="a83a8082-53b6-487f-9022-58b27264b9c2" time="1370094753135" ignored="false" />
@@ -124,31 +126,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BusHost.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala">
+      <file leaf-file-name="Utils.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file:///mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="69" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusHost_test.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file:///mnt/repos/akkesb/src/test/scala/BusHost_test.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="55" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.5958379">
+            <state line="10" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.18619934">
               <folding>
-                <element signature="e#14#34#0" expanded="true" />
+                <element signature="e#15#66#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.sbt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///mnt/repos/akkesb/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="65" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -183,10 +167,10 @@
         <option value="/mnt/repos/akkesb/src/main/scala/akkesb/akkesb/akkesb/dbus/DBus.scala" />
         <option value="/mnt/repos/akkesb/src/main/scala/akkesb/dbus/DBus.scala" />
         <option value="/mnt/repos/akkesb/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala" />
-        <option value="/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala" />
         <option value="/mnt/repos/akkesb/build.sbt" />
         <option value="/mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala" />
         <option value="/mnt/repos/akkesb/src/test/scala/BusHost_test.scala" />
+        <option value="/mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala" />
       </list>
     </option>
   </component>
@@ -291,6 +275,72 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="akkesb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multi-jvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akkesb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multi-jvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sent_commands_are_routed_to_registered_handlers.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -588,24 +638,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file:///mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="141" selection-end="141" vertical-scroll-proportion="0.13033953">
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/repos/akkesb/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="103" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#27#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/dbus-2.8.jar!/org/freedesktop/dbus/DBusConnection.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="16" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.34285715" />
@@ -614,13 +646,6 @@
     <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/dbus/DBus.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="8" selection-start="253" selection-end="253" vertical-scroll-proportion="0.018619934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///mnt/repos/akkesb/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -642,9 +667,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala">
+    <entry file="file:///mnt/repos/akkesb/src/multi-jvm/scala/commands/sent_commands_are_routed_to_registered_handlers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="69" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+        <state line="9" column="72" selection-start="320" selection-end="320" vertical-scroll-proportion="0.17">
+          <folding>
+            <element signature="e#27#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/repos/akkesb/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="65" selection-start="17" selection-end="17" vertical-scroll-proportion="0.018619934">
           <folding />
         </state>
       </provider>
@@ -654,6 +688,22 @@
         <state line="32" column="55" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.5958379">
           <folding>
             <element signature="e#14#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/repos/akkesb/src/main/scala/akkesb/host/BusHost.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="69" selection-start="364" selection-end="364" vertical-scroll-proportion="0.17">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/repos/akkesb/src/multi-jvm/scala/utils/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="72" selection-start="221" selection-end="221" vertical-scroll-proportion="0.18619934">
+          <folding>
+            <element signature="e#15#66#0" expanded="true" />
           </folding>
         </state>
       </provider>

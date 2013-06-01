@@ -254,3 +254,7 @@ gen-idea
 test
 sbt
 test
+multi-jvm
+multi-jvm:run
+multi-jvm-tests
+multi-jvm:run multijvm.commands.CommandsAreSentToRegisteredHandlers_
