@@ -2,7 +2,7 @@ package utils
 
 import org.freedesktop.dbus.{DBusConnection, Tuple}
 import scala.Exception
-import akkesb.commands.{MessageSender}
+import akkesb.dbus.MessageSender
 
 
 object Command {
@@ -19,7 +19,7 @@ class Command(val command: (String, List[(String, Any)])) {
 
         connection.getRemoteObject(f"akkesb.$application.$service", "/messages/sending", classOf[MessageSender]) match {
             case sender: MessageSender => sender.send(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
-            case _ => throw new Exception(f"failed to get remote object: $application.$service /commands Inbox")
+            case _ => throw new Exception(f"failed to get remote object: $application.$service /akkesb Inbox")
         }
     }
 

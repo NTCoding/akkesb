@@ -1,32 +1,15 @@
 
 
-import akkesb.commands.{DBusMessageSender, ActorDelegatingMessageHandler, MessageHandler, MessageSender}
-import Host.BusHost
-import org.freedesktop.dbus.DBusConnection
-import org.junit._
-import junit.framework.Assert._
 
+import akkesb.dbus.{TestableDBusConnection, DBusMessageSender, ActorDelegatingMessageHandler}
+import akkesb.host.BusHost
+import org.freedesktop.dbus.{DBusInterface, DBusAsyncReply, DBusConnection}
+import org.scalamock.scalatest.MockFactory
 import org.scalatest.FreeSpec
+import scala.language.postfixOps
 
-class BusHost_test {
 
-    @Before
-    def when_starting_up_the_bus_host {
-
-    }
-
-    @Test
-    def command_inbox_interface_is_exported_onto_dbus_with_reference_to_a_command_handler_actor {
-        assertFalse(true)
-    }
-
-    @Test
-    def command_sender_interface_is_exported_onto_dbus_with_reference_to_a_command_sender_actor {
-        assertFalse(true)
-    }
-}
-
-class Bus_host_startup_spec extends FreeSpec  {
+class Bus_host_startup_spec extends FreeSpec with MockFactory  {
 
     val hostName = "funnyhostname"
     val port = "2892"
@@ -34,23 +17,27 @@ class Bus_host_startup_spec extends FreeSpec  {
     val service = "funnyservice"
     val handler = new ActorDelegatingMessageHandler()
     val sender = new DBusMessageSender()
-    val connection = DBusConnection.getConnection(DBusConnection.SESSION)
+    val connection = mock[TestableDBusConnection]
 
 
-    "When starting up the bus host" - {
+    "When starting up the bus akkesb.host" - {
 
-          "it registers as a service on dbus using the supplied application and service name" in {
+        BusHost(hostName, port, application, service, handler, sender, connection);
 
-          }
 
-          "it exports the supplied command handler on dbus in the messages/incoming path" in {
+        "it registers as a service on akkesb using the supplied application and service name" in {
+            connection.requestBusName _ verify f"akkesb.$application.$service"
+        }
 
-          }
+        "it exports the supplied command handler on akkesb in the messages/incoming path" in {
 
-          "it exports the supplied command sender on dbus in the messages/outgoing path" in {
+        }
 
-          }
+        "it exports the supplied command sender on akkesb in the messages/outgoing path" in {
 
-          BusHost(hostName, port, application, service, handler, sender, connection);
+        }
+
     }
 }
+
+

@@ -2,11 +2,11 @@
 Outstanding Questions
 ---------------------
 
-1. How will the bus host application be started?
+1. How will the bus akkesb.host application be started?
 
 2. What will the message format be?
 
-3. How will instances of the host join the bus's network?
+3. How will instances of the akkesb.host join the bus's network?
 
 4. How will a message consumer receive messages so it can process them?
 
@@ -22,4 +22,4 @@ Outstanding Questions
 
 10. If the client is to be push based (somehow, e.g. ports) would it be possible to just hook into rabbitmq and let it do the work?
 
-11. should there be 1 host process machine or 1 host process per service? - Spend time thinking about this and looking at how other buses work
+11. should there be 1 akkesb.host process machine or 1 akkesb.host process per service? - Spend time thinking about this and looking at how other buses work

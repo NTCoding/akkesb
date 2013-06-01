@@ -1,14 +1,14 @@
-package Host
+package akkesb.host
 
-import org.freedesktop.dbus.DBusConnection
-import akkesb.commands._
+import akkesb.dbus.{TestableDBusConnection, MessageHandler, MessageSender}
 
 object BusHost {
 
-    def apply(hostName: String, port: String, application: String, serviceName: String, handler: MessageHandler, sender: MessageSender, connection: DBusConnection) =  {
-        /*
-                connection.requestBusName(f"akkesb.$application.$serviceName")
+    def apply(hostName: String, port: String, application: String, serviceName: String, handler: MessageHandler, sender: MessageSender, connection: TestableDBusConnection) =  {
 
+        //connection.requestBusName(f"akkesb.$application.$serviceName")
+
+        /*
         connection.exportObject("/messages/handling", handler)
         connection.exportObject("/messages/sending", sender)
         */

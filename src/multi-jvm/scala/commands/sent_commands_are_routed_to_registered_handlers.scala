@@ -1,17 +1,17 @@
 package multijvm.commands
 
-import Host.BusHost
+import akkesb.host.{BusHost}
 import utils._
-import akkesb.commands.{ActorDelegatingMessageHandler, DBusMessageSender, MessageHandler}
 import org.junit.Assert
 import org.freedesktop.dbus.DBusConnection
+import akkesb.dbus.{AkkesbDBusConnection, ActorDelegatingMessageHandler, MessageHandler, DBusMessageSender}
 
 
-/* Each of these tests represents a separate host process - this is to emulate a distributed cluster
+/* Each of these tests represents a separate akkesb.host process - this is to emulate a distributed cluster
    where each service is running on a different machine
 
-   It is being considered whether services on the same machine might share a host process - this could be
-   1 host per OS, 1 host per app, or option to choose
+   It is being considered whether services on the same machine might share a akkesb.host process - this could be
+   1 akkesb.host per OS, 1 akkesb.host per app, or option to choose
  */
 
 
@@ -19,11 +19,12 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost {
 
     def main(args: Array[String]) {
 
+        val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
         // TODO hostname and port should be passed in as args - come back to this later
         val host = BusHost("127.0.0.1", "3051","commands_are_sent_test", "marketing_service",
-            new ActorDelegatingMessageHandler(), new DBusMessageSender(), DBusConnection.getConnection(DBusConnection.SESSION))
+            new ActorDelegatingMessageHandler(), new DBusMessageSender(), connection)
 
-        // TODO - if these are not set at startup - they will need to be sent via dbus instead
+        // TODO - if these are not set at startup - they will need to be sent via akkesb instead
         host willSendCommands List(("update_price"))
         host joinCluster
     }
@@ -37,9 +38,9 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
         var receivedMessages : List[(String, Array[String], Array[String])] = List()
         val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
+        val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
         // TODO - first 3 params can group as a data structure
-        val host = BusHost("127.0.0.1", "3052", "commands_are_sent_test", "catalogue_service", tmh,
-            new DBusMessageSender(), DBusConnection.getConnection(DBusConnection.SESSION))
+        val host = BusHost("127.0.0.1", "3052", "commands_are_sent_test", "catalogue_service", tmh, new DBusMessageSender(), connection)
 
         host willSendCommands List("stop_taking_payments_for_product")
         host willHandleCommands List("update_price")
@@ -60,9 +61,9 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
         var receivedMessages : List[(String, Array[String], Array[String])] = List()
         val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
-
+        val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
         val host = BusHost("127.0.0.1", "3053", "commands_are_sent_test", "payments_service", tmh,
-            new DBusMessageSender(), DBusConnection.getConnection(DBusConnection.SESSION))
+            new DBusMessageSender(), connection)
 
         host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
@@ -77,7 +78,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_ClientLibrarySimulation {
 
     /*
         Messages are sent from a separate JVM replicating how a real system work - client
-        libraries will send messages via dbus from separate processes
+        libraries will send messages via akkesb from separate processes
      */
     def main(args: Array[String]) {
 

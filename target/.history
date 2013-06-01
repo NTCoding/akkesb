@@ -220,3 +220,5 @@ clean
 update
 compile
 test
+last test:test
+test
