@@ -15,3 +15,7 @@ TODO
 
 5. Create some tests that simulate failures in the actor system
 	+ e.g. what if the actor that receives commands dies?
+
+6. Set up a schedule for code-review and clean up
+	+ think about how to use akka better
+	+ make code more functional

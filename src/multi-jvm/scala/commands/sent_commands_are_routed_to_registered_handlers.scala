@@ -89,7 +89,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_ClientLibrarySimulation {
     def main(args: Array[String]) {
 
         // wait for services to start up - might be a better way than sleeping
-        Thread.sleep(500)
+        Thread.sleep(2000)
 
         Command(("update_price", List(("productId", 1), ("price", 50))))
                .sendFrom("marketing_service", "commands_are_sent_test")
