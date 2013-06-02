@@ -50,7 +50,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
         host willHandleCommands List("update_price")
         host joinCluster
 
-        Thread.sleep(500) // wait for messages to be sent from the client library simulation
+        Thread.sleep(1000) // wait for messages to be sent from the client library simulation
 
         Assert.assertTrue("catalogue service did not receive the update price command", receivedMessages contains ("update_price", List(("productId", 1), ("price", 50))))
     }
@@ -74,7 +74,7 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
         host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
 
-        Thread.sleep(500) // wait for messages to be sent from the client library simulation
+        Thread.sleep(1000) // wait for messages to be sent from the client library simulation
 
         Assert.assertTrue("payments service did not receive stop taking payments command", receivedMessages contains ("stop_taking_payments_for_product", List(("productId", 1))))
     }
