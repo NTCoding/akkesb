@@ -1,7 +1,7 @@
 package akkesb.host
 
 import akkesb.dbus.{DBusMessageSender, TestableDBusConnection, MessageHandler, MessageSender}
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ActorRef, Props, ActorSystem}
 
 object BusHost {
 
@@ -10,8 +10,13 @@ object BusHost {
 
         connection.requestBusName(f"akkesb.$application.$serviceName")
 
-        // don't like the cast, but severley constrained by dbus's lack of testability
-        sender.asInstanceOf[DBusMessageSender].setActor(actorSystem.actorOf(new Props(classOf[MessageSendActor])))
+        val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrationsActor]))
+        val serviceFacadeActor = actorSystem.actorOf(new Props(classOf[ServiceFacadeActor]))
+        val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, serviceFacadeActor)))
+
+        sender
+            .asInstanceOf[DBusMessageSender]  // don't like the cast, but severely constrained by dbus's lack of testability
+            .setActor(messageSendActor)
 
         connection.exportObject("/messages/incoming", handler)
         connection.exportObject("/messages/outgoing", sender)

@@ -1,13 +1,16 @@
 package unittests
 
 import akkesb.dbus._
-import akkesb.host.{MessageSendActor, BusHost}
+import akkesb.host.{MessageRegistrationsActor, ServiceFacadeActor, MessageSendActor, BusHost}
 import org.scalatest.{OneInstancePerTest, FreeSpec}
 import scala.language.postfixOps
 import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
-import akka.actor.{Props, ActorRef, ActorSystem}
-import akka.testkit.TestActorRef
+import akka.actor.{Actor, Props, ActorRef, ActorSystem}
+import akka.testkit.{TestKit, TestActorRef}
+import org.mockito.Matchers._
+import org.hamcrest.{Description, BaseMatcher}
+import scala.util.Random
 
 class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with MockitoSugar  {
 
@@ -20,13 +23,27 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
     val connection = mock[TestableDBusConnection]
     implicit val actorSystem = mock[ActorSystem]
     val messageSendingActor = mock[ActorRef]
+    val serviceFacadeActor = mock[ActorRef]
+    val registrationsActor = mock[ActorRef]
 
 
     "When the bus host starts up" - {
 
-        when(actorSystem.actorOf(new Props(classOf[MessageSendActor]))).thenReturn(messageSendingActor)
+        when(actorSystem
+            .actorOf(new Props(classOf[ServiceFacadeActor])))
+            .thenReturn(serviceFacadeActor)
+
+        when(actorSystem
+            .actorOf(new Props(classOf[MessageRegistrationsActor])))
+            .thenReturn(registrationsActor)
+
+        // if there's a better way to match the arguments here I'd love to know
+        when(actorSystem
+            .actorOf(argThat(new IsValidPropsToCreateActor(classOf[MessageSendActor]))))
+            .thenReturn(messageSendingActor)
 
         BusHost(hostName, port, application, service, handler, sender, connection, actorSystem)
+
 
         "it registers as a service on dbus using the supplied application and service name" in {
             verify(connection) requestBusName f"akkesb.$application.$service"
@@ -46,4 +63,17 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
     }
 }
 
+class IsValidPropsToCreateActor(actorType: Class[_]) extends BaseMatcher[Props]{
+
+    implicit val actorSystem = ActorSystem.create("test")
+
+    def matches(item: Any): Boolean = {
+        val props = item.asInstanceOf[Props]
+        TestActorRef(props, randomName).underlyingActor.getClass.equals(actorType)
+    }
+
+    def randomName = "random_name_" + new Random().nextInt(999)
+
+    def describeTo(description: Description) {}
+}
 
