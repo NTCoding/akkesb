@@ -13,6 +13,7 @@ class DBusMessageSender extends MessageSender {
 
     def isRemote: Boolean = false
 
+    // TODO - rename this to message send actor
     private var actorRef : Option[ActorRef] = None
 
     def send(name: String, keys: Array[String], values: Array[String])  {
