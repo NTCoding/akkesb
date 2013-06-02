@@ -1,4 +1,4 @@
-package test
+package unittests
 
 import akkesb.dbus._
 import akkesb.host.{MessageSendActor, BusHost}
@@ -24,12 +24,7 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
 
     "When the bus host starts up" - {
 
-        // goal = the handler, will have a reference to an actor who will get messages into the system
         when(actorSystem.actorOf(new Props(classOf[MessageSendActor]))).thenReturn(messageSendingActor)
-
-        // create an actor system and pass it into the bus
-
-        // assert that the handler exported, contains the actor ref for the message receiver actor
 
         BusHost(hostName, port, application, service, handler, sender, connection, actorSystem)
 
@@ -39,7 +34,6 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
 
         "it passes a reference to the message sending actor to the message sender" in {
             verify(sender) setActor messageSendingActor
-            // TODO - need to add a test to ensure it uses the actor?
         }
 
         "it exports the supplied command handler on dbus in the messages/incoming path" in {
