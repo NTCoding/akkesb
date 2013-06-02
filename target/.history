@@ -285,3 +285,4 @@ TEST
 test
 last test:test
 test
+multi-jvm:run multijvm.commands.CommandsAreSentToRegisteredHandlers_

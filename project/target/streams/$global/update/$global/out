@@ -1335,7 +1335,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#cache;0.12.3!cache.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#test-agent;0.12.3!test-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1183ms :: artifacts dl 44ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2211ms :: artifacts dl 61ms[0m
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT compile produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT runtime produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT test produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-test.xml[0m
@@ -1348,5 +1348,5 @@
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT sources produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-sources.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT docs produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#default-c74d22;0.1-SNAPSHOT pom produced in /mnt/repos/akkesb/project/target/resolution-cache/reports/default-default-c74d22-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1183ms resolve - 44ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (2211ms resolve - 61ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
