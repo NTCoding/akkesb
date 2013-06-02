@@ -1,10 +1,11 @@
 package unittests
 
 import akka.actor.ActorSystem
-import akka.testkit.{TestActorRef, TestKit}
-import akkesb.dbus.DBusMessageSender
-import org.scalatest.{FreeSpecLike, fixture, WordSpec}
-import akkesb.host.{SendCommand, MessageSendActor}
+import akka.testkit.TestKit
+import akkesb.dbus.{MessageSendActorHasNotBeenSet, DBusMessageSender}
+import org.scalatest.FreeSpecLike
+import akkesb.host.SendCommand
+import scala.concurrent.duration.FiniteDuration
 
 class DBus_message_sender_spec extends TestKit(ActorSystem("testsystemt")) with FreeSpecLike with StopSystemAfterAll {
 
@@ -12,12 +13,14 @@ class DBus_message_sender_spec extends TestKit(ActorSystem("testsystemt")) with 
     "when the sender has been configured with an actor ref" - {
 
         val sender = new DBusMessageSender()
-        val actorRef =  TestActorRef[MessageSendActor]
-        sender.setActor(actorRef)
-        sender.send("test_message", Array("1", "2", "3"), Array("4", "5", "6"))
+        val keys = Array("1", "2", "3")
+        val values = Array("4", "5", "6")
+
+        sender.setActor(testActor)
+        sender.send("test_message", keys, values)
 
         "messages sending is handled by forwarding the message to the message sending actor" in {
-            expectMsg(SendCommand("test_message", Array("1", "2", "3"), Array("4", "5", "6")))
+            expectMsg(new SendCommand("test_message", keys, values))
         }
 
     }
@@ -25,8 +28,12 @@ class DBus_message_sender_spec extends TestKit(ActorSystem("testsystemt")) with 
 
     "when the sender has **NOT** been configured with an actor ref" - {
 
+        val sender = new DBusMessageSender()
+
         "attempts to handle messages will always throw a descriptive exception" in {
-            fail("blah")
+             intercept[MessageSendActorHasNotBeenSet] {
+                sender.send("should_blow_up", Array("1"), Array("2"))
+             }
         }
 
     }

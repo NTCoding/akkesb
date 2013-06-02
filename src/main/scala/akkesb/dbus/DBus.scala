@@ -2,6 +2,7 @@ package akkesb.dbus
 
 import org.freedesktop.dbus._
 import akka.actor.ActorRef
+import akkesb.host.SendCommand
 
 trait MessageSender extends DBusInterface {
 
@@ -12,16 +13,21 @@ class DBusMessageSender extends MessageSender {
 
     def isRemote: Boolean = false
 
-    def send(name: String, keys: Array[String], values: Array[String]) {
-        // find the service that owns this command
+    private var actorRef : Option[ActorRef] = None
 
-        // send the command to the remote actor named service_actor
+    def send(name: String, keys: Array[String], values: Array[String])  {
+        actorRef match {
+            case Some(actor) => actor ! SendCommand(name, keys, values)
+            case None => throw new MessageSendActorHasNotBeenSet()
+        }
     }
 
     def setActor(actor: ActorRef) {
-        println("set actor not implemented")
+        actorRef = Some(actor)
     }
 }
+
+class MessageSendActorHasNotBeenSet extends Exception
 
 trait MessageHandler extends DBusInterface {
 
