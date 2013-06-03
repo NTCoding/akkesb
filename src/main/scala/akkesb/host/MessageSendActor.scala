@@ -9,5 +9,4 @@ class MessageSendActor(val messageRegistrationsActor: ActorRef, val serviceActor
         case send: SendCommand => messageRegistrationsActor ! WhoHandlesCommandRequest(send.name, send.keys, send.data)
         case ownedBy: CommandOwnedBy => serviceActor ! SendCommandToService(ownedBy.owner, ownedBy.commandName, ownedBy.keys, ownedBy.data)
     }
-
 }

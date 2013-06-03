@@ -37,7 +37,6 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
             .actorOf(new Props(classOf[MessageRegistrationsActor])))
             .thenReturn(registrationsActor)
 
-        // if there's a better way to match the arguments here I'd love to know
         when(actorSystem
             .actorOf(argThat(new IsValidPropsToCreateActor(classOf[MessageSendActor]))))
             .thenReturn(messageSendingActor)
@@ -72,7 +71,7 @@ class IsValidPropsToCreateActor(actorType: Class[_]) extends BaseMatcher[Props]{
         TestActorRef(props, randomName).underlyingActor.getClass.equals(actorType)
     }
 
-    def randomName = "random_name_" + new Random().nextInt(999)
+    def randomName = "random_name_" + new Random().nextInt(99999)
 
     def describeTo(description: Description) {}
 }
