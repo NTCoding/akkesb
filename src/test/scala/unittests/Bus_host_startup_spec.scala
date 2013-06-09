@@ -13,7 +13,17 @@ import org.hamcrest.{Description, BaseMatcher}
 import scala.util.Random
 
 class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with MockitoSugar  {
-
+    val hostName = "funnyhostname"
+    val port = "2892"
+    val application = "funnyapplication"
+    val service = "funnyservice"
+    val handler = new ActorDelegatingMessageHandler()
+    val sender = mock[DBusMessageSender]
+    val connection = mock[TestableDBusConnection]
+    implicit val actorSystem = mock[ActorSystem]
+    val messageSendingActor = mock[ActorRef]
+    val serviceFacadeActor = mock[ActorRef]
+    val registrationsActor = mock[ActorRef]
     "When the bus host starts up" - {
 
         when(actorSystem
@@ -47,19 +57,6 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
             verify(connection) exportObject("/messages/outgoing", sender)
         }
     }
-
-
-    val hostName = "funnyhostname"
-    val port = "2892"
-    val application = "funnyapplication"
-    val service = "funnyservice"
-    val handler = new ActorDelegatingMessageHandler()
-    val sender = mock[DBusMessageSender]
-    val connection = mock[TestableDBusConnection]
-    implicit val actorSystem = mock[ActorSystem]
-    val messageSendingActor = mock[ActorRef]
-    val serviceFacadeActor = mock[ActorRef]
-    val registrationsActor = mock[ActorRef]
 }
 
 class IsValidPropsToCreateActor(actorType: Class[_]) extends BaseMatcher[Props]{
