@@ -19,3 +19,8 @@ TODO
 6. Set up a schedule for code-review and clean up
 	+ think about how to use akka better
 	+ make code more functional
+
+7. Code review
+	+ standardise things
+	+ consistent message naming pattern
+	+ consistent testing style

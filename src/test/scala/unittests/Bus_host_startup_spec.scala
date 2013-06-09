@@ -40,7 +40,6 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
 
         BusHost(hostName, port, application, service, handler, sender, connection, actorSystem)
 
-
         "it registers as a service on dbus using the supplied application and service name" in {
             verify(connection) requestBusName f"akkesb.$application.$service"
         }

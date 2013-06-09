@@ -6,7 +6,7 @@ import akka.actor.{ActorRef, Actor}
 class MessageSendActor(val messageRegistrationsActor: ActorRef, val serviceActor: ActorRef) extends Actor {
 
     def receive =  {
-        case send: SendCommand => messageRegistrationsActor ! WhoHandlesCommandRequest(send.name, send.keys, send.data)
-        case ownedBy: CommandOwnedBy => serviceActor ! SendCommandToService(ownedBy.owner, ownedBy.commandName, ownedBy.keys, ownedBy.data)
+        case send: SendCommand => messageRegistrationsActor ! WhoHandlesCommand(send.name, send.keys, send.data)
+        case ownedBy: CommandHandledBy => serviceActor ! SendCommandToService(ownedBy.handler, ownedBy.commandName, ownedBy.keys, ownedBy.values)
     }
 }
