@@ -14,7 +14,12 @@ class MessageRegistrationsActor extends Actor {
             registrations = registrations  + (registration.command -> registration.handlingService)
         }
         case whoHandles: WhoHandlesCommand => {
-            sender ! CommandHandledBy(registrations.get(whoHandles.name).head, whoHandles.name, whoHandles.keys, whoHandles.values)
+            registrations.get(whoHandles.name) match {
+                case handler: Some[String] =>  sender ! CommandHandledBy(handler.head, whoHandles.name, whoHandles.keys, whoHandles.values)
+                case None => throw new UnRegisteredCommand
+            }
         }
     }
 }
+
+class UnRegisteredCommand extends Exception

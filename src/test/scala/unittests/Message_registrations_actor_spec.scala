@@ -4,10 +4,13 @@ import akka.actor.{Props, ActorSystem}
 import org.scalatest.FreeSpecLike
 import org.scalatest.mock.MockitoSugar
 import akka.testkit.{TestActorRef, TestActor, TestKit}
-import akkesb.host.{CommandHandledBy, WhoHandlesCommand, RegisterCommandHandler, MessageRegistrationsActor}
+import akkesb.host._
 import akka.testkit
 import scala.concurrent.duration.Duration
 import org.scalatest.MustMatchers
+import akkesb.host.CommandHandledBy
+import akkesb.host.WhoHandlesCommand
+import akkesb.host.RegisterCommandHandler
 
 class Message_registrations_actor_spec extends TestKit(ActorSystem("TestActorSystem")) with FreeSpecLike
                                        with StopSystemAfterAll with MustMatchers {
@@ -36,6 +39,10 @@ class Message_registrations_actor_spec extends TestKit(ActorSystem("TestActorSys
                 response.keys must equal(keys)
                 response.values must equal(values)
             }
+        }
+
+        "But when a request is made for an un-registered command an exception is thrown stating that no service is registered to handle this command" in {
+            intercept[UnRegisteredCommand] { registrationsActor.receive(WhoHandlesCommand("unregistered", Array("blah"), Array("blah"))) }
         }
     }
 
