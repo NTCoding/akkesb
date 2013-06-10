@@ -6,4 +6,3 @@
    - openjdk7
    - openjdk6
 
- script: sbt test
