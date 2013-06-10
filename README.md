@@ -8,3 +8,5 @@ To learn more about this project, please look in the "doc" folder in the root of
 If you would like to join this project then please get in touch. You don't need to know Scala or Akka - just an enthusiasm to learn.
 
 You can see the CI build on Travis here: https://travis-ci.org/NTCoding/akkesb
+
+[![Build Status](https://travis-ci.org/NTCoding/akkesb.png?branch=master)](https://travis-ci.org/NTCoding/akkesb)
