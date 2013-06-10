@@ -6,6 +6,7 @@ import org.junit.Assert
 import org.freedesktop.dbus.DBusConnection
 import akkesb.dbus.{AkkesbDBusConnection, ActorDelegatingMessageHandler, MessageHandler, DBusMessageSender}
 import akka.actor.ActorSystem
+import org.scalatest.{FreeSpec, FreeSpecLike}
 
 
 /* Each of these tests represents a separate akkesb.host process - this is to emulate a distributed cluster
@@ -16,27 +17,23 @@ import akka.actor.ActorSystem
  */
 
 
-object CommandsAreSentToRegisteredHandlers_MultiJvm_MarketingServiceHost {
+class CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost extends FreeSpec {
 
-    def main(args: Array[String]) {
-
+    "startup a marketing service that registers itself as a sender of update_price commands " - {
         val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
         val actorSystem = ActorSystem.create("akkesb")
         // TODO hostname and port should be passed in as args - come back to this later
         val host = BusHost("127.0.0.1", "3051","commands_are_sent_test", "marketing_service",
             new ActorDelegatingMessageHandler(), new DBusMessageSender(), connection, actorSystem)
-
         // TODO - if these are not set at startup - they will need to be sent via akkesb instead
         host willSendCommands List(("update_price"))
         host joinCluster
     }
-
 }
 
-object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
+class CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends FreeSpec {
 
-    def main(args: Array[String]) {
-
+    "startup a catalogue service that sends stop_taking_payments_for_product commands and handles update_price commands" - {
         var receivedMessages : List[(String, Array[String], Array[String])] = List()
         val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
@@ -50,18 +47,17 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_CatalogueServiceHost {
         host willHandleCommands List("update_price")
         host joinCluster
 
-        Thread.sleep(1000) // wait for messages to be sent from the client library simulation
-
-        Assert.assertTrue("catalogue service did not receive the update price command", receivedMessages contains ("update_price", List(("productId", 1), ("price", 50))))
+        "the catalogue service will have received the update_price command sent from the client" in {
+            Thread.sleep(1000) // wait for messages to be sent from the client library simulation
+            Assert.assertTrue("catalogue service did not receive the update price command", receivedMessages contains ("update_price", List(("productId", 1), ("price", 50))))
+        }
     }
 }
 
 
-object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
+class CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends FreeSpec {
 
-
-    def main(args: Array[String]) {
-
+    "Startup a payments service that handles stop_taking_payments_for_product commands" - {
         var receivedMessages : List[(String, Array[String], Array[String])] = List()
         val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
@@ -74,29 +70,26 @@ object CommandsAreSentToRegisteredHandlers_MultiJvm_PaymentsServiceHost {
         host willHandleCommands List("stop_taking_payments_for_product")
         host joinCluster
 
-        Thread.sleep(1000) // wait for messages to be sent from the client library simulation
-
-        Assert.assertTrue("payments service did not receive stop taking payments command", receivedMessages contains ("stop_taking_payments_for_product", List(("productId", 1))))
+        "the payments service will have recieved the stop_taking_paments_for_product command that was sent from the client" in {
+            Thread.sleep(1000) // wait for messages to be sent from the client library simulation
+            Assert.assertTrue("payments service did not receive stop taking payments command", receivedMessages contains ("stop_taking_payments_for_product", List(("productId", 1))))
+        }
     }
 }
 
-object CommandsAreSentToRegisteredHandlers_MultiJvm_ClientLibrarySimulation {
-
+class CommandsAreSentToRegisteredHandlersMultiJvmClientLibrarySimulation extends FreeSpec {
     /*
         Messages are sent from a separate JVM replicating how a real system work - client
         libraries will send messages via akkesb from separate processes
      */
-    def main(args: Array[String]) {
-
-        // wait for services to start up - might be a better way than sleeping
-        Thread.sleep(2000)
+    "Simulate a client library that sends an update_price and stop_taking_payments_for_product command" - {
+        Thread.sleep(2000) // wait for services to start up - might be a better way than sleeping
 
         Command(("update_price", List(("productId", 1), ("price", 50))))
                .sendFrom("marketing_service", "commands_are_sent_test")
 
         Command(("stop_taking_payments_for_product", List(("productId", 1))))
                .sendFrom("catalogue_service", "commands_are_sent_test")
-
     }
 }
 

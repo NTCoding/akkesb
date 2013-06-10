@@ -22,6 +22,7 @@ object akkesbBuild extends Build {
     lazy val multiJvmSettings = SbtMultiJvm.multiJvmSettings ++ Seq(
         // make sure that MultiJvm test are compiled by the default test compilation
         compile in MultiJvm <<= (compile in MultiJvm) triggeredBy (compile in Test),
+
         // disable parallel tests
         parallelExecution in Test := false,
         // make sure that MultiJvm tests are executed by the default test target
