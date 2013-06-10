@@ -24,14 +24,7 @@ object akkesbBuild extends Build {
         compile in MultiJvm <<= (compile in MultiJvm) triggeredBy (compile in Test),
 
         // disable parallel tests
-        parallelExecution in Test := false,
-        // make sure that MultiJvm tests are executed by the default test target
-        executeTests in Test <<=
-            ((executeTests in Test), (executeTests in MultiJvm)) map {
-                case ((_, testResults), (_, multiJvmResults))  =>
-                    val results = testResults ++ multiJvmResults
-                    (Tests.overall(results.values), results)
-            }
+        parallelExecution in Test := false
     )
 
     object Dependencies {
