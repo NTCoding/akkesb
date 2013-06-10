@@ -27,7 +27,6 @@ object BusHost {
 
 class BusHost(val hostName: String, val port: String, val application: String, val service: String) {
 
-
     def willSendCommands (commands: List[String]) {
 
     }
@@ -35,7 +34,6 @@ class BusHost(val hostName: String, val port: String, val application: String, v
     def willHandleCommands (commands: List[String]) {
 
     }
-
 
     def joinCluster {
 
