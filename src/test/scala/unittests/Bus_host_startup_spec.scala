@@ -13,6 +13,7 @@ import org.hamcrest.{Description, BaseMatcher}
 import scala.util.Random
 
 class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with MockitoSugar  {
+
     val hostName = "funnyhostname"
     val port = "2892"
     val application = "funnyapplication"
@@ -24,6 +25,8 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
     val messageSendingActor = mock[ActorRef]
     val serviceFacadeActor = mock[ActorRef]
     val registrationsActor = mock[ActorRef]
+
+
     "When the bus host starts up" - {
 
         when(actorSystem
@@ -39,6 +42,7 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
             .thenReturn(messageSendingActor)
 
         BusHost(hostName, port, application, service, handler, sender, connection, actorSystem)
+
 
         "it registers as a service on dbus using the supplied application and service name" in {
             verify(connection) requestBusName f"akkesb.$application.$service"

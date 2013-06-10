@@ -5,14 +5,12 @@ import akka.actor.ActorRef
 import akkesb.host.SendCommand
 
 trait MessageSender extends DBusInterface {
-
    def send(name: String, keys: Array[String], values: Array[String])
 }
 
 class DBusMessageSender extends MessageSender {
 
     def isRemote: Boolean = false
-
     // TODO - rename this to message send actor
     private var actorRef : Option[ActorRef] = None
 
