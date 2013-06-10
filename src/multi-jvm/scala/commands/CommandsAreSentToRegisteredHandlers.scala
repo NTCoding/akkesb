@@ -54,7 +54,6 @@ class CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends Fr
     }
 }
 
-
 class CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends FreeSpec {
 
     "Startup a payments service that handles stop_taking_payments_for_product commands" - {
