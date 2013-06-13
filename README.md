@@ -16,8 +16,10 @@ Dependencies
 ------------
 
 1. DBus - e.g for Debian/Ubuntu/Crashbang: 
+
     apt-get install dbus-java-bin for
 
 2. unix-java - you need to tell Java where to find libunix-java.so. E.g do this in .zshrc: 
+
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jni"
 
