@@ -14,6 +14,7 @@ You can see the CI build on Travis here: https://travis-ci.org/NTCoding/akkesb
 
 Dependencies
 ------------
+Apart from the obvious Scala and SBT you will also need some dependencies on your machine:
 
 1. DBus - e.g for Debian/Ubuntu/Crashbang: 
 
