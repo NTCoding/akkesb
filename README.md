@@ -10,3 +10,11 @@ If you would like to join this project then please get in touch. You don't need 
 You can see the CI build on Travis here: https://travis-ci.org/NTCoding/akkesb
 
 [![Build Status](https://travis-ci.org/NTCoding/akkesb.png?branch=master)](https://travis-ci.org/NTCoding/akkesb)
+
+
+Dependencies
+------------
+
+1. DBus - e.g. apt-get install dbus-java-bin for Debian/Ubuntu
+2. unix-java - you need to tell Java where to find libunix-java.so. E.g do this in .zshrc "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jni"
+
