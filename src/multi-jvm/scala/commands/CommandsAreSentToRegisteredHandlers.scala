@@ -20,7 +20,9 @@ import org.scalatest.{FreeSpec, FreeSpecLike}
 object CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost extends FreeSpec {
 
     def main(args: Array[String]) {
+
         "startup a marketing service that registers itself as a sender of update_price commands " - {
+
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
             val actorSystem = ActorSystem.create("akkesb")
             // TODO hostname and port should be passed in as args - come back to this later
@@ -36,7 +38,9 @@ object CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost extends F
 object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends FreeSpec {
 
     def main(args: Array[String]) {
+
         "startup a catalogue service that sends stop_taking_payments_for_product commands and handles update_price commands" - {
+
             var receivedMessages : List[(String, Array[String], Array[String])] = List()
             val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
@@ -50,6 +54,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends F
             host willHandleCommands List("update_price")
             host joinCluster
 
+
             "the catalogue service will have received the update_price command sent from the client" in {
                 Thread.sleep(1000) // wait for messages to be sent from the client library simulation
                 Assert.assertTrue("catalogue service did not receive the update price command", receivedMessages contains ("update_price", List(("productId", 1), ("price", 50))))
@@ -61,7 +66,9 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends F
 object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends FreeSpec {
 
     def main(args: Array[String]) {
+
         "Startup a payments service that handles stop_taking_payments_for_product commands" - {
+
             var receivedMessages : List[(String, Array[String], Array[String])] = List()
             val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
@@ -73,6 +80,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends Fr
 
             host willHandleCommands List("stop_taking_payments_for_product")
             host joinCluster
+
 
             "the payments service will have recieved the stop_taking_paments_for_product command that was sent from the client" in {
                 Thread.sleep(1000) // wait for messages to be sent from the client library simulation

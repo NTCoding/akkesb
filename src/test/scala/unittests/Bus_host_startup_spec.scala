@@ -1,7 +1,7 @@
 package unittests
 
 import akkesb.dbus._
-import akkesb.host.{MessageRegistrationsActor, ServiceFacadeActor, MessageSendActor, BusHost}
+import akkesb.host._
 import org.scalatest.{OneInstancePerTest, FreeSpec}
 import scala.language.postfixOps
 import org.scalatest.mock.MockitoSugar
@@ -25,9 +25,12 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
     val messageSendingActor = mock[ActorRef]
     val serviceFacadeActor = mock[ActorRef]
     val registrationsActor = mock[ActorRef]
+    val creator = mock[ActorSystemCreator]
 
 
     "When the bus host starts up" - {
+
+        when(creator.create(application, hostName, port)).thenReturn(actorSystem)
 
         when(actorSystem
             .actorOf(new Props(classOf[ServiceFacadeActor])))
@@ -41,7 +44,7 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
             .actorOf(argThat(new IsValidPropsToCreateActor(classOf[MessageSendActor]))))
             .thenReturn(messageSendingActor)
 
-        BusHost(hostName, port, application, service, handler, sender, connection, actorSystem)
+        BusHost(hostName, port, application, service, handler, sender, connection, creator)
 
 
         "it registers as a service on dbus using the supplied application and service name" in {

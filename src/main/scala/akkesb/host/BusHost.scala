@@ -6,10 +6,12 @@ import akka.actor.{ActorRef, Props, ActorSystem}
 object BusHost {
 
     def apply(hostName: String, port: String, application: String, serviceName: String, handler: MessageHandler, sender: MessageSender,
-              connection: TestableDBusConnection, actorSystem: ActorSystem) =  {
+              connection: TestableDBusConnection, actorSystemCreator: ActorSystemCreator) =  {
 
         connection.requestBusName(f"akkesb.$application.$serviceName")
 
+        val actorSystem = actorSystemCreator.create(application, hostName, port)
+        // TODO - these will all be created from the top level actor, not directly from the actor system
         val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrationsActor]))
         val serviceFacadeActor = actorSystem.actorOf(new Props(classOf[ServiceFacadeActor]))
         val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, serviceFacadeActor)))
