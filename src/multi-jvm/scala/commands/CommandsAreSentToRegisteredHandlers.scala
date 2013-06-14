@@ -92,7 +92,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmClientLibrarySimulation extend
         libraries will send messages via akkesb from separate processes
      */
     def main(args: Array[String]) {
-        Thread.sleep(2000) // wait for services to start up - might be a better way than sleeping
+        Thread.sleep(4000) // wait for services to start up - might be a better way than sleeping
 
         Command(("update_price", List(("productId", 1), ("price", 50))))
                .sendFrom("marketing_service", "commandsAreSentTest")
