@@ -1,6 +1,6 @@
 package multijvm.commands
 
-import akkesb.host.{BusHost}
+import akkesb.host.{RemoteActorSystemCreator, BusHost}
 import utils._
 import org.junit.Assert
 import org.freedesktop.dbus.DBusConnection
@@ -24,10 +24,9 @@ object CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost extends F
         "startup a marketing service that registers itself as a sender of update_price commands " - {
 
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-            val actorSystem = ActorSystem.create("akkesb")
             // TODO hostname and port should be passed in as args - come back to this later
-            val host = BusHost("127.0.0.1", "3051","commands_are_sent_test", "marketing_service",
-                new ActorDelegatingMessageHandler(), new DBusMessageSender(), connection, actorSystem)
+            val host = BusHost("127.0.0.1", "3051","commandsAreSentTest", "marketing_service",
+                new ActorDelegatingMessageHandler(), new DBusMessageSender(), connection, new RemoteActorSystemCreator)
             // TODO - if these are not set at startup - they will need to be sent via akkesb instead
             host willSendCommands List(("update_price"))
             host joinCluster
@@ -45,10 +44,9 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends F
             val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-            val actorSystem = ActorSystem.create("akkesb")
             // TODO - first 3 params can group as a data structure
-            val host = BusHost("127.0.0.1", "3052", "commands_are_sent_test", "catalogue_service", tmh, new DBusMessageSender(),
-                connection, actorSystem)
+            val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", tmh, new DBusMessageSender(),
+                connection, new RemoteActorSystemCreator)
 
             host willSendCommands List("stop_taking_payments_for_product")
             host willHandleCommands List("update_price")
@@ -71,12 +69,10 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends Fr
 
             var receivedMessages : List[(String, Array[String], Array[String])] = List()
             val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
-
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-            val actorSystem = ActorSystem.create("akkesb")
 
-            val host = BusHost("127.0.0.1", "3053", "commands_are_sent_test", "payments_service", tmh,
-                new DBusMessageSender(), connection, actorSystem)
+            val host = BusHost("127.0.0.1", "3053", "commandsAreSentTest", "payments_service", tmh,
+                new DBusMessageSender(), connection, new RemoteActorSystemCreator)
 
             host willHandleCommands List("stop_taking_payments_for_product")
             host joinCluster
@@ -99,10 +95,10 @@ object CommandsAreSentToRegisteredHandlersMultiJvmClientLibrarySimulation extend
         Thread.sleep(2000) // wait for services to start up - might be a better way than sleeping
 
         Command(("update_price", List(("productId", 1), ("price", 50))))
-               .sendFrom("marketing_service", "commands_are_sent_test")
+               .sendFrom("marketing_service", "commandsAreSentTest")
 
         Command(("stop_taking_payments_for_product", List(("productId", 1))))
-               .sendFrom("catalogue_service", "commands_are_sent_test")
+               .sendFrom("catalogue_service", "commandsAreSentTest")
     }
 }
 
