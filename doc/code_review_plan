@@ -10,6 +10,10 @@ Things to look at:
 		+ some actors are suffixed with actor
 		+ some tests are suffixed with test, whilst others are suffixed with spec
 
+	3. Folder structure
+		+ how am I going to group messages - by protocol?
+		+ folder per-feature?
+
 
 General considerations:
 

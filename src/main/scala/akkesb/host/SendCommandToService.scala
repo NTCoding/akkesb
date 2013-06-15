@@ -1,3 +1,5 @@
 package akkesb.host
 
-case class SendCommandToService(service: String, commandName: String, keys: Array[String], values: Array[String])
+import akka.actor.ActorRef
+
+case class SendCommandToService(service: ActorRef, command: (String, Array[String], Array[String]))

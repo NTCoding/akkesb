@@ -2,7 +2,7 @@ package akkesb.host
 
 import akka.actor.{Address, Actor}
 
-class AddressBookActor( val application: String) extends Actor {
+class AddressBookActor(val application: String) extends Actor {
 
     var addressBook = Map[String, (String, String)]()
     // TODO - what about when this service goes down?

@@ -18,9 +18,10 @@ class Message_send_actor_spec extends TestKit(ActorSystem("TestActorSystem")) wi
         val unusedInThisTestActor = mock[ActorRef]
         val keys = Array("1", "2")
         val values = Array("3", "4")
+        val registrations = testActor
 
-        val messageSendActor = system.actorOf(new Props(() => new MessageSendActor(testActor, unusedInThisTestActor)))
-        messageSendActor ! SendCommand("eat_the_doughnuts", keys, values)
+        val messageSender = system.actorOf(new Props(() => new MessageSendActor(registrations, unusedInThisTestActor, unusedInThisTestActor)))
+        messageSender ! SendCommand("eat_the_doughnuts", keys, values)
 
         "it sends a message to the message registration actor asking who handles the command" in {
             expectMsg(WhoHandlesCommand("eat_the_doughnuts", keys, values))
@@ -32,12 +33,29 @@ class Message_send_actor_spec extends TestKit(ActorSystem("TestActorSystem")) wi
         val unusedInThisTestActor = mock[ActorRef]
         val keys = Array("1", "2")
         val values = Array("3", "4")
+        val addressBook = testActor
 
-        val messageSendActor = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, testActor)))
-        messageSendActor ! CommandHandledBy("marketing_service", "xyzcommand", keys, values)
+        val messageSender = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, unusedInThisTestActor, addressBook)))
+        messageSender ! CommandHandledBy("marketing_service", "xyzcommand", keys, values)
 
-        "it sends a 'send command' message to the service actor" in {
-            expectMsg(SendCommandToService("marketing_service", "xyzcommand", keys, values))
+        "it asks the address book for a reference to the address of the service who owns the command" in {
+             expectMsg(WhatIsTheAddressFor("marketing_service", ("xyzcommand", keys, values)))
+        }
+    }
+
+    "when the message send actor receives a reference to an address" - {
+
+        val unusedInThisTestActor = mock[ActorRef]
+        val serviceFacade = testActor
+        val keys = Array("password")
+        val values =  Array("cheese")
+        val addressRef = TestActorRef[ServiceFacadeActor]
+
+        val messageSender = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, serviceFacade, unusedInThisTestActor)))
+        messageSender ! ReferenceToAddress(addressRef, ("command", keys, values))
+
+        "it tells the service facade to send the command to the address reference" in {
+            expectMsg(SendCommandToService(addressRef,("command", keys, values)))
         }
     }
 
