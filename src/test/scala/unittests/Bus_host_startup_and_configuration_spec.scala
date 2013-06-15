@@ -12,6 +12,7 @@ import org.mockito.Matchers._
 import org.hamcrest.{Description, BaseMatcher}
 import scala.util.Random
 import akkesb.host.AddAddress
+import org.scalatest.exceptions.NotAllowedException
 
 class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestActorSystem2")) with FreeSpecLike with StopSystemAfterAll
                                     with MustMatchers with MockitoSugar  {
@@ -80,15 +81,19 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
 
 class IsValidPropsToCreateActor(actorType: Class[_]) extends BaseMatcher[Props]{
 
-    implicit val actorSystem = ActorSystem.create("test")
+    val random = new Random()
+
+    implicit val actorSystem = ActorSystem.create("test" + random.nextInt(99999))
 
     def matches(item: Any): Boolean = {
-        val props = item.asInstanceOf[Props]
-        TestActorRef(props, randomName).underlyingActor.getClass.equals(actorType)
+        item match {
+            case props: Props => TestActorRef(props, f"$actorType${random.nextInt(999999)}").underlyingActor.getClass.equals(actorType)
+            case null => false
+        }
     }
-
-    def randomName = "random_name_" + new Random().nextInt(99999)
+    def randomName = "random_name_" + random.nextInt(99999)
 
     def describeTo(description: Description) {}
+
 }
 

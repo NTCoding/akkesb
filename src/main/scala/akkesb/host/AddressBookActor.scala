@@ -2,7 +2,7 @@ package akkesb.host
 
 import akka.actor.{Address, Actor}
 
-class AddressBookActor(application: String) extends Actor {
+class AddressBookActor( val application: String) extends Actor {
 
     var addressBook = Map[String, (String, String)]()
     // TODO - what about when this service goes down?
@@ -11,11 +11,11 @@ class AddressBookActor(application: String) extends Actor {
 
         case AddAddress(service, hostname, port) => addressBook = addressBook + (service -> (hostname, port))
 
-        case WhatIsTheAddressFor(service) => {
+        case WhatIsTheAddressFor(service, command) => {
             val address = addressBook.get(service).get
             val hostname = address._1
             val port = address._2
-            sender ! ReferenceToAddress(context.actorFor(s"akka://$application@$hostname:$port/user/$service"))
+            sender ! ReferenceToAddress(context.actorFor(s"akka://$application@$hostname:$port/user/$service"), command)
         }
     }
 }

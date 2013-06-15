@@ -23,7 +23,7 @@ object BusHost {
         connection.exportObject("/messages/incoming", handler)
         connection.exportObject("/messages/outgoing", sender)
 
-        new BusHost(hostName, port, application, serviceName, actorSystem.actorOf(new Props(() => new AddressBookActor(serviceName))))
+        new BusHost(hostName, port, application, serviceName, actorSystem.actorOf(Props(() => new AddressBookActor(application))))
     }
 }
 

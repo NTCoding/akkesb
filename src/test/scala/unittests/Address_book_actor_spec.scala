@@ -9,8 +9,8 @@ import org.scalatest.MustMatchers
 
 class Address_book_actor_spec extends TestKit(ActorSystem("TestActorSystem989")) with FreeSpecLike with MustMatchers with StopSystemAfterAll{
 
-    val keys = Array(1, 2, 3)
-    val values = Array(1, 2, 3)
+    val keys = Array("1", "2", "3")
+    val values = Array("4", "5", "6")
 
     "When telling the address book to store an address" - {
 
@@ -22,7 +22,7 @@ class Address_book_actor_spec extends TestKit(ActorSystem("TestActorSystem989"))
             receiveOne(Duration(200, "ms")) match {
                 case ref: ReferenceToAddress => {
                     ref.reference.path.address must equal("akka://testApplicatione@456.289.33.33:8876/user/7digital")
-                    ref.
+                    ref.command must equal(("command", keys, values))
                 }
             }
         }
