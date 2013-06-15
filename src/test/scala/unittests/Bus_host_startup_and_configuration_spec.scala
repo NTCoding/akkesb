@@ -47,7 +47,7 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
             .thenReturn(messageSendingActor)
 
         when(actorSystem
-            .actorOf(new Props(classOf[AddressBookActor])))
+            .actorOf(argThat(new IsValidPropsToCreateActor(classOf[AddressBookActor]))))
             .thenReturn(testActor)
 
         val host = BusHost(hostName, port, application, service, handler, sender, connection, creator)

@@ -1,10 +1,21 @@
 package akkesb.host
 
-import akka.actor.Actor
+import akka.actor.{Address, Actor}
 
-class AddressBookActor extends Actor {
+class AddressBookActor(application: String) extends Actor {
 
+    var addressBook = Map[String, (String, String)]()
+    // TODO - what about when this service goes down?
+    // TODO - should the address book always be in memory if the system grows massive?
     def receive = {
-        case _ => throw new Exception("Address book actor not configured to handle any messages")
+
+        case AddAddress(service, hostname, port) => addressBook = addressBook + (service -> (hostname, port))
+
+        case WhatIsTheAddressFor(service) => {
+            val address = addressBook.get(service).get
+            val hostname = address._1
+            val port = address._2
+            sender ! ReferenceToAddress(context.actorFor(s"akka://$application@$hostname:$port/user/$service"))
+        }
     }
 }
