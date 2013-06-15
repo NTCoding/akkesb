@@ -27,9 +27,8 @@ object CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost extends F
             // TODO hostname and port should be passed in as args - come back to this later
             val host = BusHost("127.0.0.1", "3051","commandsAreSentTest", "marketing_service",
                 new ActorDelegatingMessageHandler(), new DBusMessageSender(), connection, new RemoteActorSystemCreator)
-            // TODO - if these are not set at startup - they will need to be sent via akkesb instead
+            host joinCluster(List(("catalogue_service", "127.0.0.1", "3052"), ("payments_service", "127.0.0.1", "3053")))
             host willSendCommands List(("update_price"))
-            host joinCluster
         }
     }
 }
@@ -44,14 +43,11 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends F
             val tmh = new TestMessageHandler((name, keys, values) => receivedMessages = receivedMessages :+ (name, keys, values))
 
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-            // TODO - first 3 params can group as a data structure
-            val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", tmh, new DBusMessageSender(),
-                connection, new RemoteActorSystemCreator)
+            val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", tmh, new DBusMessageSender(),connection, new RemoteActorSystemCreator)
 
+            host joinCluster(("marketing_service", "127.0.0.1", "3051"),("payments_service", "127.0.0.1", "3053"))
             host willSendCommands List("stop_taking_payments_for_product")
             host willHandleCommands List("update_price")
-            host joinCluster
-
 
             "the catalogue service will have received the update_price command sent from the client" in {
                 Thread.sleep(1000) // wait for messages to be sent from the client library simulation
@@ -74,9 +70,8 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends Fr
             val host = BusHost("127.0.0.1", "3053", "commandsAreSentTest", "payments_service", tmh,
                 new DBusMessageSender(), connection, new RemoteActorSystemCreator)
 
+            host joinCluster(("marketing_service", "127.0.0.1", "3051"),("catalogue_service", "127.0.0.1", "3052"))
             host willHandleCommands List("stop_taking_payments_for_product")
-            host joinCluster
-
 
             "the payments service will have recieved the stop_taking_paments_for_product command that was sent from the client" in {
                 Thread.sleep(1000) // wait for messages to be sent from the client library simulation
