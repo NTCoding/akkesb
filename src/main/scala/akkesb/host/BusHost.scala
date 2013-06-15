@@ -23,11 +23,11 @@ object BusHost {
         connection.exportObject("/messages/incoming", handler)
         connection.exportObject("/messages/outgoing", sender)
 
-        new BusHost(hostName, port, application, serviceName)
+        new BusHost(hostName, port, application, serviceName, actorSystem.actorOf(new Props(classOf[AddressBookActor])))
     }
 }
 
-class BusHost(val hostName: String, val port: String, val application: String, val service: String) {
+class BusHost(val hostName: String, val port: String, val application: String, val service: String, addressBook: ActorRef) {
 
     def willSendCommands (commands: List[String]) {
 
@@ -37,7 +37,7 @@ class BusHost(val hostName: String, val port: String, val application: String, v
 
     }
 
-    def joinCluster {
-
+    def joinCluster(nodes: List[(String, String, String)]) {
+        nodes foreach(n => addressBook ! AddAddress(n._1, n._2, n._3))
     }
 }

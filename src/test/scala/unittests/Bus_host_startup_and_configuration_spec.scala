@@ -2,7 +2,7 @@ package unittests
 
 import akkesb.dbus._
 import akkesb.host._
-import org.scalatest.{OneInstancePerTest, FreeSpec}
+import org.scalatest._
 import scala.language.postfixOps
 import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
@@ -11,8 +11,10 @@ import akka.testkit.{TestKit, TestActorRef}
 import org.mockito.Matchers._
 import org.hamcrest.{Description, BaseMatcher}
 import scala.util.Random
+import akkesb.host.AddAddress
 
-class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with MockitoSugar  {
+class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestActorSystem2")) with FreeSpecLike with StopSystemAfterAll
+                                    with MustMatchers with MockitoSugar  {
 
     val hostName = "funnyhostname"
     val port = "2892"
@@ -44,7 +46,11 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
             .actorOf(argThat(new IsValidPropsToCreateActor(classOf[MessageSendActor]))))
             .thenReturn(messageSendingActor)
 
-        BusHost(hostName, port, application, service, handler, sender, connection, creator)
+        when(actorSystem
+            .actorOf(new Props(classOf[AddressBookActor])))
+            .thenReturn(testActor)
+
+        val host = BusHost(hostName, port, application, service, handler, sender, connection, creator)
 
 
         "it registers as a service on dbus using the supplied application and service name" in {
@@ -62,6 +68,13 @@ class Bus_host_startup_spec extends FreeSpec with OneInstancePerTest with Mockit
         "it exports the supplied command sender on dbus in the messages/outgoing path" in {
             verify(connection) exportObject("/messages/outgoing", sender)
         }
+
+        "it forwards addresses to the address book actor when joining a cluster" in {
+            host joinCluster(List(("funny_service", "127.0.0.1", "1111"), ("crazy_service", "243.122.56.23", "4454")))
+            expectMsg(AddAddress("funny_service", "127.0.0.1", "1111"))
+            expectMsg(AddAddress("crazy_service", "243.122.56.23", "4454"))
+        }
+
     }
 }
 

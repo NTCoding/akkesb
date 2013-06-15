@@ -25,6 +25,8 @@ class RemoteActorSystemCreatorSpec extends FreeSpec with MustMatchers {
         "Have the supplied name" in {
             system.name must equal("tangyniknaks")
         }
+
+        system.shutdown()
     }
 
 }
