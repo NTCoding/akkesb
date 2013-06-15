@@ -10,7 +10,10 @@ import akkesb.host.ReferenceToAddress
 import akkesb.host.AddAddress
 import akkesb.host.WhatIsTheAddressFor
 import com.typesafe.config.ConfigFactory
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
 
+@RunWith(classOf[JUnitRunner])
 class Address_book_actor_spec extends TestKit(ActorSystem("TestActorSystem989", ConfigFactory.load(ConfigFactory.parseString("""akka.actor { provider = "akka.remote.RemoteActorRefProvider" }"""))))
                                 with FreeSpecLike with MustMatchers with StopSystemAfterAll{
 

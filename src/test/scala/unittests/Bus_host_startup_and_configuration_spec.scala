@@ -16,8 +16,7 @@ import org.scalatest.exceptions.NotAllowedException
 import akkesb.host.DistributeCommandOwnership
 import akkesb.host.AddAddress
 
-class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestActorSystem2")) with FreeSpecLike with StopSystemAfterAll
-                                    with MustMatchers with MockitoSugar  {
+class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunnerAndTestKit  {
 
     val hostName = "funnyhostname"
     val port = "2892"

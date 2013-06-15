@@ -12,8 +12,7 @@ import akkesb.host.CommandHandledBy
 import akkesb.host.WhoHandlesCommand
 import akkesb.host.RegisterCommandHandler
 
-class Message_registrations_actor_spec extends TestKit(ActorSystem("TestActorSystem")) with FreeSpecLike
-                                       with StopSystemAfterAll with MustMatchers {
+class Message_registrations_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
     // TODO - test cases for un-registered commands and duplicate registrations
 

@@ -7,7 +7,7 @@ import org.scalatest.FreeSpecLike
 import akkesb.host.SendCommand
 import scala.concurrent.duration.FiniteDuration
 
-class DBus_message_sender_spec extends TestKit(ActorSystem("testsystemt")) with FreeSpecLike with StopSystemAfterAll {
+class DBus_message_sender_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
 
     "when the sender has been configured with an actor ref" - {

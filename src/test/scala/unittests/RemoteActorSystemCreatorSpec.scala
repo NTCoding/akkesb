@@ -4,7 +4,7 @@ import org.scalatest.FreeSpec
 import org.scalatest.MustMatchers
 import akkesb.host.RemoteActorSystemCreator
 
-class RemoteActorSystemCreatorSpec extends FreeSpec with MustMatchers {
+class RemoteActorSystemCreatorSpec extends TestBaseClassWithJunitRunnerAndTestKit {
 
     "Actor systems created by the Remote Actor System Creator" - {
 

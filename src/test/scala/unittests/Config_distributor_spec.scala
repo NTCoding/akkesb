@@ -11,7 +11,7 @@ import org.scalatest.junit.JUnitRunner
 import org.junit.runner.RunWith
 
 @RunWith(classOf[JUnitRunner])
-class Config_distributor_spec extends TestKit(ActorSystem("configdistrib")) with FreeSpecLike with StopSystemAfterAll with MustMatchers {
+class Config_distributor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
 
     "when the config distributor is told to distribute commands" - {

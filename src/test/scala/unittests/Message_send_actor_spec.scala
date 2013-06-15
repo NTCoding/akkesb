@@ -10,8 +10,7 @@ import akkesb.host.WhoHandlesCommand
 import akkesb.host.SendCommand
 
 
-class Message_send_actor_spec extends TestKit(ActorSystem("TestActorSystem")) with FreeSpecLike with StopSystemAfterAll
-                              with MockitoSugar {
+class Message_send_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
     "when the message send actor receives a 'send command' message" - {
 
