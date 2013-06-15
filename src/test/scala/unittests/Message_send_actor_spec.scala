@@ -49,7 +49,7 @@ class Message_send_actor_spec extends TestKit(ActorSystem("TestActorSystem")) wi
         val serviceFacade = testActor
         val keys = Array("password")
         val values =  Array("cheese")
-        val addressRef = TestActorRef[ServiceFacadeActor]
+        val addressRef = TestActorRef[ServiceEndpoint]
 
         val messageSender = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, serviceFacade, unusedInThisTestActor)))
         messageSender ! ReferenceToAddress(addressRef, ("command", keys, values))

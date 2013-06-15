@@ -39,7 +39,7 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
         when(creator.create(application, hostName, port)).thenReturn(actorSystem)
 
         when(actorSystem
-            .actorOf(new Props(classOf[ServiceFacadeActor])))
+            .actorOf(new Props(classOf[ServiceEndpoint])))
             .thenReturn(serviceFacadeActor)
 
         when(actorSystem

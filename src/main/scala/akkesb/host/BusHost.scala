@@ -13,9 +13,9 @@ object BusHost {
         val actorSystem = actorSystemCreator.create(application, hostName, port)
         // TODO - these will all be created from the top level actor, not directly from the actor system
         val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrationsActor]))
-        val serviceFacadeActor = actorSystem.actorOf(new Props(classOf[ServiceFacadeActor]))
+        val endpoint = actorSystem.actorOf(new Props(classOf[ServiceEndpoint]))
         val addressBook = actorSystem.actorOf(Props(() => new AddressBookActor(application)))
-        val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, serviceFacadeActor, addressBook)))
+        val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, endpoint, addressBook)))
 
         sender
             .asInstanceOf[DBusMessageSender]  // don't like the cast, but severely constrained by dbus's lack of testability

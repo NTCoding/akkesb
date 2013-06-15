@@ -2,8 +2,8 @@ package akkesb.host
 
 import akka.actor.Actor
 
-class ServiceFacadeActor extends Actor {
-    def receive: ServiceFacadeActor#Receive = {
+class ServiceEndpoint extends Actor {
+    def receive: ServiceEndpoint#Receive = {
         case _ => println("Service facade actor receive not implemented")
     }
 }
