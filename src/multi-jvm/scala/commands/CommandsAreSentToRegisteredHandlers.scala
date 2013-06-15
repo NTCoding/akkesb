@@ -45,7 +45,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends F
             val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
             val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", tmh, new DBusMessageSender(),connection, new RemoteActorSystemCreator)
 
-            host joinCluster(("marketing_service", "127.0.0.1", "3051"),("payments_service", "127.0.0.1", "3053"))
+            host joinCluster(List(("marketing_service", "127.0.0.1", "3051"),("payments_service", "127.0.0.1", "3053")))
             host willSendCommands List("stop_taking_payments_for_product")
             host willHandleCommands List("update_price")
 
@@ -70,7 +70,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost extends Fr
             val host = BusHost("127.0.0.1", "3053", "commandsAreSentTest", "payments_service", tmh,
                 new DBusMessageSender(), connection, new RemoteActorSystemCreator)
 
-            host joinCluster(("marketing_service", "127.0.0.1", "3051"),("catalogue_service", "127.0.0.1", "3052"))
+            host joinCluster(List(("marketing_service", "127.0.0.1", "3051"),("catalogue_service", "127.0.0.1", "3052")))
             host willHandleCommands List("stop_taking_payments_for_product")
 
             "the payments service will have recieved the stop_taking_paments_for_product command that was sent from the client" in {
