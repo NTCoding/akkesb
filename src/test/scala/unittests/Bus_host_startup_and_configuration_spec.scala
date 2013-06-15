@@ -54,7 +54,7 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
             .thenReturn(testActor)
 
         when(actorSystem
-            .actorOf(new Props(classOf[ConfigDistributor])))
+            .actorOf(argThat(new IsValidPropsToCreateActor(classOf[ConfigDistributor]))))
             .thenReturn(configDistributor.ref)
 
         val host = BusHost(hostName, port, application, service, handler, sender, connection, creator)

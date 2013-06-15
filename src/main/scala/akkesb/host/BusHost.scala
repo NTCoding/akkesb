@@ -24,7 +24,7 @@ object BusHost {
         connection.exportObject("/messages/incoming", handler)
         connection.exportObject("/messages/outgoing", sender)
 
-        new BusHost(hostName, port, application, serviceName, addressBook, actorSystem.actorOf(Props(classOf[ConfigDistributor])))
+        new BusHost(hostName, port, application, serviceName, addressBook, actorSystem.actorOf(Props(() => new ConfigDistributor(addressBook, endpoint))))
     }
 }
 
