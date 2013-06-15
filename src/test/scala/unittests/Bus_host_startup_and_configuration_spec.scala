@@ -6,13 +6,15 @@ import org.scalatest._
 import scala.language.postfixOps
 import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
-import akka.actor.{Actor, Props, ActorRef, ActorSystem}
-import akka.testkit.{TestKit, TestActorRef}
+import akka.actor._
+import akka.testkit.{TestProbe, TestKit, TestActorRef}
 import org.mockito.Matchers._
 import org.hamcrest.{Description, BaseMatcher}
 import scala.util.Random
 import akkesb.host.AddAddress
 import org.scalatest.exceptions.NotAllowedException
+import akkesb.host.DistributeCommandOwnership
+import akkesb.host.AddAddress
 
 class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestActorSystem2")) with FreeSpecLike with StopSystemAfterAll
                                     with MustMatchers with MockitoSugar  {
@@ -29,6 +31,7 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
     val serviceFacadeActor = mock[ActorRef]
     val registrationsActor = mock[ActorRef]
     val creator = mock[ActorSystemCreator]
+    val configDistributor = new TestProbe(system)
 
 
     "When the bus host starts up" - {
@@ -50,6 +53,10 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
         when(actorSystem
             .actorOf(argThat(new IsValidPropsToCreateActor(classOf[AddressBookActor]))))
             .thenReturn(testActor)
+
+        when(actorSystem
+            .actorOf(new Props(classOf[ConfigDistributor])))
+            .thenReturn(configDistributor.ref)
 
         val host = BusHost(hostName, port, application, service, handler, sender, connection, creator)
 
@@ -74,6 +81,12 @@ class Bus_host_startup_and_configuration_spec extends TestKit(ActorSystem("TestA
             host joinCluster(List(("funny_service", "127.0.0.1", "1111"), ("crazy_service", "243.122.56.23", "4454")))
             expectMsg(AddAddress("funny_service", "127.0.0.1", "1111"))
             expectMsg(AddAddress("crazy_service", "243.122.56.23", "4454"))
+        }
+
+        "when handler registrations are updated it tells the config distributor to distribute them" in {
+            val commandNames = List("im_alive_command", "time_for_breakfast_command")
+            host willHandleCommands(commandNames)
+            configDistributor.expectMsg(DistributeCommandOwnership(service, commandNames))
         }
 
     }

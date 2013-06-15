@@ -24,18 +24,18 @@ object BusHost {
         connection.exportObject("/messages/incoming", handler)
         connection.exportObject("/messages/outgoing", sender)
 
-        new BusHost(hostName, port, application, serviceName, addressBook)
+        new BusHost(hostName, port, application, serviceName, addressBook, actorSystem.actorOf(Props(classOf[ConfigDistributor])))
     }
 }
 
-class BusHost(val hostName: String, val port: String, val application: String, val service: String, addressBook: ActorRef) {
+class BusHost(val hostName: String, val port: String, val application: String, val service: String, addressBook: ActorRef, configDistributor: ActorRef) {
 
     def willSendCommands (commands: List[String]) {
 
     }
 
     def willHandleCommands (commands: List[String]) {
-
+        configDistributor ! DistributeCommandOwnership(service, commands)
     }
 
     def joinCluster(nodes: List[(String, String, String)]) {
