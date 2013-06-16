@@ -8,12 +8,12 @@ import org.scalatest.mock.MockitoSugar
 import akkesb.host.CommandHandledBy
 import akkesb.host.WhoHandlesCommand
 import akkesb.host.SendCommand
+import akkesb.dbus.MessageHandler
 
 
 class Message_send_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
     "when the message send actor receives a 'send command' message" - {
-
         val unusedInThisTestActor = mock[ActorRef]
         val keys = Array("1", "2")
         val values = Array("3", "4")
@@ -28,7 +28,6 @@ class Message_send_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
     }
 
     "when the message send actor receives an 'owned by' message" - {
-
         val unusedInThisTestActor = mock[ActorRef]
         val keys = Array("1", "2")
         val values = Array("3", "4")
@@ -43,12 +42,11 @@ class Message_send_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
     }
 
     "when the message send actor receives a reference to an address" - {
-
         val unusedInThisTestActor = mock[ActorRef]
         val serviceFacade = testActor
         val keys = Array("password")
         val values =  Array("cheese")
-        val addressRef = TestActorRef(Props(() => new ServiceEndpoint(TestProbe().ref)))
+        val addressRef = TestActorRef(Props(() => new ServiceEndpoint(TestProbe().ref, mock[MessageHandler])))
 
         val messageSender = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, serviceFacade, unusedInThisTestActor)))
         messageSender ! ReferenceToAddress(addressRef, ("command", keys, values))

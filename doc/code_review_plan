@@ -17,6 +17,8 @@ Things to look at:
 	4. Testing - am I testing the implementation details by checking that every message is sent to every actor?
 		+ should I just say that when these actors are filled with this state lined up in this order?
 
+	5. Create some diagrams showing message flow through the system?
+
 
 General considerations:
 

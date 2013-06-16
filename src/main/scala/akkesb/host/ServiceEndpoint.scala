@@ -2,8 +2,9 @@ package akkesb.host
 
 import akka.actor.{ActorRef, InvalidMessageException, Actor}
 import akka.event.Logging
+import akkesb.dbus.MessageHandler
 
-class ServiceEndpoint(registrar: ActorRef) extends Actor {
+class ServiceEndpoint(registrar: ActorRef, handler: MessageHandler) extends Actor {
 
     val log = Logging(context.system, this)
 
@@ -13,6 +14,8 @@ class ServiceEndpoint(registrar: ActorRef) extends Actor {
         case CommandHandlerRegistrations(service, commands) => registrar ! RegisterMultipleCommandsHandler(commands, service)
 
         case SendCommandToService(service, command) => service ! ProcessCommand(command)
+
+        case ProcessCommand(command) => handler handle(command._1, command._2, command._3)
 
         case any => throw new UnsupportedOperationException(s"Service endpoint not configured to handle: $any")
     }
