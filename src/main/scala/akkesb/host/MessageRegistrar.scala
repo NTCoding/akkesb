@@ -16,10 +16,10 @@ class MessageRegistrar extends Actor {
         case whoHandles: WhoHandlesCommand => {
             registrations.get(whoHandles.name) match {
                 case handler: Some[String] =>  sender ! CommandHandledBy(handler.head, whoHandles.name, whoHandles.keys, whoHandles.values)
-                case None => throw new UnRegisteredCommand
+                case None => throw new UnRegisteredCommand(s"${whoHandles.name} is not registered. Currently have commands: ${registrations.keys.mkString(",")}")
             }
         }
     }
 }
 
-class UnRegisteredCommand extends Exception
+class UnRegisteredCommand(message: String) extends Exception(message)
