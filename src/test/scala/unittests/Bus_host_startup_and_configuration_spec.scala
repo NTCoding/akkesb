@@ -23,7 +23,7 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
     val port = "2892"
     val application = "funnyapplication"
     val service = "funnyservice"
-    val handler = new ActorDelegatingMessageHandler()
+    val handler = mock[MessageHandler]
     val sender = mock[DBusMessageSender]
     val connection = mock[TestableDBusConnection]
     implicit val actorSystem = mock[ActorSystem]
@@ -79,17 +79,16 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
         }
 
         "it forwards addresses to the address book actor when joining a cluster" in {
-            host joinCluster(List(("funny_service", "127.0.0.1", "1111"), ("crazy_service", "243.122.56.23", "4454")))
+            host joinCluster List(("funny_service", "127.0.0.1", "1111"), ("crazy_service", "243.122.56.23", "4454"))
             expectMsg(AddAddress("funny_service", "127.0.0.1", "1111"))
             expectMsg(AddAddress("crazy_service", "243.122.56.23", "4454"))
         }
 
         "when handler registrations are updated it tells the config distributor to distribute them" in {
             val commandNames = List("im_alive_command", "time_for_breakfast_command")
-            host willHandleCommands(commandNames)
+            host willHandleCommands commandNames
             configDistributor.expectMsg(DistributeCommandOwnership(service, commandNames))
         }
-
     }
 }
 

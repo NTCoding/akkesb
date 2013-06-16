@@ -34,7 +34,7 @@ trait MessageHandler extends DBusInterface {
     def handle(name: String, keys: Array[String], values: Array[String])
 }
 
-class ActorDelegatingMessageHandler extends MessageHandler {
+class DBusMessageHandler extends MessageHandler {
 
     def handle(name: String, keys: Array[String], values: Array[String]) {
         println("Message handler does nothing with messages")
