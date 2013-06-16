@@ -13,9 +13,11 @@ object BusHost {
         val actorSystem = actorSystemCreator.create(application, hostName, port)
         // TODO - these will all be created from the top level actor, not directly from the actor system
         val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrationsActor]))
-        val endpoint = actorSystem.actorOf(new Props(classOf[ServiceEndpoint]))
+        val endpoint = actorSystem.actorOf(new Props(classOf[ServiceEndpoint]), serviceName)
         val addressBook = actorSystem.actorOf(Props(() => new AddressBookActor(application)))
         val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, endpoint, addressBook)))
+
+        if(endpoint == null) throw new AkkesbStartupFailed("service endpoint could not be created")
 
         sender
             .asInstanceOf[DBusMessageSender]  // don't like the cast, but severely constrained by dbus's lack of testability
@@ -42,3 +44,5 @@ class BusHost(val hostName: String, val port: String, val application: String, v
         nodes foreach(n => addressBook ! AddAddress(n._1, n._2, n._3))
     }
 }
+
+class AkkesbStartupFailed(message: String) extends Exception(message)
