@@ -8,10 +8,12 @@ trait MessageHandler extends DBusInterface {
     def handle(name: String, keys: Array[String], values: Array[String])
 }
 
-class DBusMessageHandler extends MessageHandler {
+class DBusMessageHandler(private val application: String, private val service: String, private val conn: TestableDBusConnection) extends MessageHandler {
 
     def handle(name: String, keys: Array[String], values: Array[String]) {
-        println("Message handler does nothing with messages")
+        conn.getRemoteObject(s"akkesb.$application.$service.Client", "/commands/receiving", classOf[MessageHandler]) match {
+            case handler: MessageHandler => handler.handle(name, keys, values)
+        }
     }
 
     def isRemote = false

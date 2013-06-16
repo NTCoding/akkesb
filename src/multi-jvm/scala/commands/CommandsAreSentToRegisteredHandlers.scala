@@ -23,7 +23,8 @@ object CommandsAreSentToRegisteredHandlersMultiJvmMarketingServiceHost {
 
     def main(args: Array[String]) {
         val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-        val host = BusHost("127.0.0.1", "3051","commandsAreSentTest", "marketing_service",new DBusMessageHandler, new DBusMessageSender, connection, new RemoteActorSystemCreator)
+        val h = new DBusMessageHandler("commandsAreSentTest","marketing_service", connection)
+        val host = BusHost("127.0.0.1", "3051","commandsAreSentTest", "marketing_service",h, new DBusMessageSender, connection, new RemoteActorSystemCreator)
         host joinCluster List(("catalogue_service", "127.0.0.1", "3052"), ("payments_service", "127.0.0.1", "3053"))
         host willSendCommands List("update_price")
 
@@ -48,7 +49,8 @@ object CommandsAreSentToRegisteredHandlersMultiJvmCatalogueServiceHost extends M
 
     def main(args: Array[String]) {
         val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-        val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", new DBusMessageHandler, new DBusMessageSender,connection, new RemoteActorSystemCreator)
+        val h = new DBusMessageHandler("commandsAreSentTest", "catalogue_service", connection)
+        val host = BusHost("127.0.0.1", "3052", "commandsAreSentTest", "catalogue_service", h, new DBusMessageSender,connection, new RemoteActorSystemCreator)
 
         host joinCluster List(("marketing_service", "127.0.0.1", "3051"), ("payments_service", "127.0.0.1", "3053"))
         host willSendCommands List("stop_taking_payments_for_product")
@@ -88,8 +90,8 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceHost {
 
     def main(args: Array[String]) {
         val connection = new AkkesbDBusConnection(DBusConnection.getConnection(DBusConnection.SESSION))
-
-        val host = BusHost("127.0.0.1", "3053", "commandsAreSentTest", "payments_service", new DBusMessageHandler, new DBusMessageSender, connection, new RemoteActorSystemCreator)
+        val h = new DBusMessageHandler("commandsAreSentTest", "payments_service", connection)
+        val host = BusHost("127.0.0.1", "3053", "commandsAreSentTest", "payments_service", h, new DBusMessageSender, connection, new RemoteActorSystemCreator)
         host joinCluster List(("marketing_service", "127.0.0.1", "3051"), ("catalogue_service", "127.0.0.1", "3052"))
         host willHandleCommands List("stop_taking_payments_for_product")
 

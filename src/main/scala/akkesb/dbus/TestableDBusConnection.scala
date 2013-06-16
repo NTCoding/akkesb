@@ -20,6 +20,11 @@ trait TestableDBusConnection {
         case Some(c) => c.exportObject(path, interface)
         case None => println("no DBus connection")
     }
+
+    def getRemoteObject[A <: DBusInterface](service: String, path: String, interface: Class[A]) = conn match {
+        case Some(c) => c.getRemoteObject(service, path, interface)
+        case None => println("Cannot get remote object, no DBus connections")
+    }
 }
 
 class AkkesbDBusConnection(connection: DBusConnection) extends TestableDBusConnection {
