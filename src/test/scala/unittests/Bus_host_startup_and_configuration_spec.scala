@@ -10,6 +10,7 @@ import akka.actor._
 import akka.testkit.{TestProbe, TestKit, TestActorRef}
 import org.mockito.Matchers._
 import org.hamcrest.{Description, BaseMatcher}
+import org.hamcrest.CoreMatchers._
 import scala.util.Random
 import akkesb.host.AddAddress
 import org.scalatest.exceptions.NotAllowedException
@@ -28,7 +29,7 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
     implicit val actorSystem = mock[ActorSystem]
     val messageSendingActor = mock[ActorRef]
     val serviceFacadeActor = mock[ActorRef]
-    val registrationsActor = mock[ActorRef]
+    val messageRegistrar = mock[ActorRef]
     val creator = mock[ActorSystemCreator]
     val configDistributor = new TestProbe(system)
 
@@ -37,13 +38,14 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
 
         when(creator.create(application, hostName, port)).thenReturn(actorSystem)
 
+        // TODO- the "IsValidProps..." checker does not ensure that the correct refs are passed in - just the correct number
         when(actorSystem
-            .actorOf(new Props(classOf[ServiceEndpoint]), service))
+            .actorOf(argThat(new IsValidPropsToCreateActor(classOf[ServiceEndpoint])), argThat(equalTo(service))))
             .thenReturn(serviceFacadeActor)
 
         when(actorSystem
             .actorOf(new Props(classOf[MessageRegistrar])))
-            .thenReturn(registrationsActor)
+            .thenReturn(messageRegistrar)
 
         when(actorSystem
             .actorOf(argThat(new IsValidPropsToCreateActor(classOf[MessageSendActor]))))

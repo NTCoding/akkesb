@@ -1,6 +1,6 @@
 package unittests
 
-import akka.testkit.{TestActorRef, TestKit}
+import akka.testkit.{TestProbe, TestActorRef, TestKit}
 import akka.actor.{ActorRef, Props, ActorSystem}
 import org.scalatest.FreeSpecLike
 import akkesb.host._
@@ -48,7 +48,7 @@ class Message_send_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
         val serviceFacade = testActor
         val keys = Array("password")
         val values =  Array("cheese")
-        val addressRef = TestActorRef[ServiceEndpoint]
+        val addressRef = TestActorRef(Props(() => new ServiceEndpoint(TestProbe().ref)))
 
         val messageSender = system.actorOf(new Props(() => new MessageSendActor(unusedInThisTestActor, serviceFacade, unusedInThisTestActor)))
         messageSender ! ReferenceToAddress(addressRef, ("command", keys, values))

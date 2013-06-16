@@ -12,10 +12,10 @@ object BusHost {
 
         val actorSystem = actorSystemCreator.create(application, hostName, port)
         // TODO - these will all be created from the top level actor, not directly from the actor system
-        val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrar]))
-        val endpoint = actorSystem.actorOf(new Props(classOf[ServiceEndpoint]), serviceName)
+        val registrar = actorSystem.actorOf(new Props(classOf[MessageRegistrar]))
+        val endpoint = actorSystem.actorOf(new Props(() => new ServiceEndpoint(registrar)), serviceName)
         val addressBook = actorSystem.actorOf(Props(() => new AddressBookActor(application)))
-        val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, endpoint, addressBook)))
+        val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrar, endpoint, addressBook)))
 
         if(endpoint == null) throw new AkkesbStartupFailed("service endpoint could not be created")
 
