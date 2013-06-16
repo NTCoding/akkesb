@@ -1,7 +1,9 @@
+import akka.sbt.AkkaKernelPlugin
 import sbt._
 import Keys._
 import com.typesafe.sbt.SbtMultiJvm
 import com.typesafe.sbt.SbtMultiJvm.MultiJvmKeys.{ MultiJvm }
+import akka.sbt.AkkaKernelPlugin._
 
 object akkesbBuild extends Build {
 
@@ -15,8 +17,11 @@ object akkesbBuild extends Build {
     lazy val example = Project(
         id = "example",
         base = file("."),
-        settings = buildSettings ++
-            Seq(libraryDependencies ++= Dependencies.all)
+        settings = buildSettings ++ AkkaKernelPlugin.distSettings
+                   ++ Seq(
+                            libraryDependencies ++= Dependencies.all,
+                            outputDirectory in Dist := file("target/akkesb")
+                          )
     ) configs(MultiJvm)
 
     lazy val multiJvmSettings = SbtMultiJvm.multiJvmSettings ++ Seq(
