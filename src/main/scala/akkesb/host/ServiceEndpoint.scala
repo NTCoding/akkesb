@@ -1,13 +1,16 @@
 package akkesb.host
 
 import akka.actor.{ActorRef, InvalidMessageException, Actor}
+import akka.event.Logging
 
 class ServiceEndpoint extends Actor {
+
+    val log = Logging(context.system, this)
 
     def sendRemoteMessage(tuple: (ActorRef, AnyRef)) {
         val recipient = tuple._1
         val message = tuple._2
-        println(s"Sending remote message: $message to $recipient")
+        log.info(s"Sending remote message: $message to $recipient")
         recipient ! message
     }
 

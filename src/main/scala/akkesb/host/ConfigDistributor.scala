@@ -7,12 +7,10 @@ class ConfigDistributor(addressBook: ActorRef, serviceEndpoint: ActorRef) extend
     def receive = {
 
         case DistributeCommandOwnership(owner, commands) => {
-            println("Config distributor looking up address of all services")
             addressBook ! GiveMeAReferenceToAllServiceAddresses((owner, commands))
         }
 
         case AllServices(services, (owner: String, commands: List[String])) => {
-            println("Config distributor about to send configs to all remote services")
             serviceEndpoint ! SendRemoteMessages(messagesFor(services, owner, commands))
         }
     }
