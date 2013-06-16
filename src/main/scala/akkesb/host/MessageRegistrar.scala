@@ -5,7 +5,7 @@ import scala.collection.convert.Wrappers.DictionaryWrapper
 import java.util.Dictionary
 import scala.collection.mutable
 
-class MessageRegistrationsActor extends Actor {
+class MessageRegistrar extends Actor {
 
     var registrations: Map[String, String] = Map[String, String]()
 

@@ -42,7 +42,7 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
             .thenReturn(serviceFacadeActor)
 
         when(actorSystem
-            .actorOf(new Props(classOf[MessageRegistrationsActor])))
+            .actorOf(new Props(classOf[MessageRegistrar])))
             .thenReturn(registrationsActor)
 
         when(actorSystem

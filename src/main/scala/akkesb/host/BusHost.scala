@@ -12,7 +12,7 @@ object BusHost {
 
         val actorSystem = actorSystemCreator.create(application, hostName, port)
         // TODO - these will all be created from the top level actor, not directly from the actor system
-        val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrationsActor]))
+        val registrationsActor = actorSystem.actorOf(new Props(classOf[MessageRegistrar]))
         val endpoint = actorSystem.actorOf(new Props(classOf[ServiceEndpoint]), serviceName)
         val addressBook = actorSystem.actorOf(Props(() => new AddressBookActor(application)))
         val messageSendActor = actorSystem.actorOf(new Props(() => new MessageSendActor(registrationsActor, endpoint, addressBook)))

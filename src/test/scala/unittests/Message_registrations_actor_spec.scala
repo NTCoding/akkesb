@@ -18,7 +18,7 @@ class Message_registrations_actor_spec extends TestBaseClassWithJunitRunnerAndTe
 
     "When the message registrations actor has been supplied registration details" - {
 
-        val registrationsActor = TestActorRef[MessageRegistrationsActor]
+        val registrationsActor = TestActorRef[MessageRegistrar]
         registrationsActor ! RegisterCommandHandler("send_tweet_command", "ntcoding_service")
 
         "And a 'who handles command' request is received for a command that has been registered" - {
