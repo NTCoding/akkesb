@@ -10,15 +10,20 @@ class MessageRegistrar extends Actor {
     var registrations: Map[String, String] = Map[String, String]()
 
     def receive = {
-        case registration: RegisterCommandHandler => {
-            registrations = registrations  + (registration.command -> registration.handlingService)
-        }
-        case whoHandles: WhoHandlesCommand => {
-            registrations.get(whoHandles.name) match {
-                case handler: Some[String] =>  sender ! CommandHandledBy(handler.head, whoHandles.name, whoHandles.keys, whoHandles.values)
-                case None => throw new UnRegisteredCommand(s"${whoHandles.name} is not registered. Currently have commands: ${registrations.keys.mkString(",")}")
+        case RegisterCommandHandler(command, service) => register(command, service)
+
+        case RegisterMultipleCommandsHandler(commands, service) => commands foreach(c => register(c, service))
+
+        case WhoHandlesCommand(name, keys, values) => {
+            registrations.get(name) match {
+                case handler: Some[String] =>  sender ! CommandHandledBy(handler.head, name, keys, values)
+                case None => throw new UnRegisteredCommand(s"$name is not registered. Currently have commands: ${registrations.keys.mkString(",")}")
             }
         }
+    }
+
+    def register(command: String, service: String) {
+        registrations = registrations + (command -> service)
     }
 }
 

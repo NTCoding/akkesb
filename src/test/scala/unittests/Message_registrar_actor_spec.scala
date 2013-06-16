@@ -12,7 +12,7 @@ import akkesb.host.CommandHandledBy
 import akkesb.host.WhoHandlesCommand
 import akkesb.host.RegisterCommandHandler
 
-class Message_registrations_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
+class Message_registrar_actor_spec extends TestBaseClassWithJunitRunnerAndTestKit {
 
     // TODO - test cases for un-registered commands and duplicate registrations
 
@@ -42,6 +42,29 @@ class Message_registrations_actor_spec extends TestBaseClassWithJunitRunnerAndTe
 
         "But when a request is made for an un-registered command an exception is thrown stating that no service is registered to handle this command" in {
             intercept[UnRegisteredCommand] { registrationsActor.receive(WhoHandlesCommand("unregistered", Array("blah"), Array("blah"))) }
+        }
+    }
+
+
+    "When the message registrations actor has been supplied multiple registration details" - {
+
+        val registrar = TestActorRef[MessageRegistrar]
+        registrar ! RegisterMultipleCommandsHandler(List("command1", "command2", "command3"), "supa_service")
+
+        "A 'who handles command' request for each registration" - {
+
+            val keys = Array("")
+            val values = Array("")
+            registrar.tell(WhoHandlesCommand("command1", keys, values), testActor)
+            registrar.tell(WhoHandlesCommand("command2", keys, values), testActor)
+            registrar.tell(WhoHandlesCommand("command3", keys, values), testActor)
+
+            "Will be responded to with a 'command handled by' response showing the registered handler" in {
+                   expectMsg(CommandHandledBy("supa_service", "command1", keys, values))
+                   expectMsg(CommandHandledBy("supa_service", "command2", keys, values))
+                   expectMsg(CommandHandledBy("supa_service", "command3", keys, values))
+            }
+
         }
     }
 
