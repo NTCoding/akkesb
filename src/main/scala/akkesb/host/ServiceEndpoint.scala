@@ -12,6 +12,8 @@ class ServiceEndpoint(registrar: ActorRef) extends Actor {
 
         case CommandHandlerRegistrations(service, commands) => registrar ! RegisterMultipleCommandsHandler(commands, service)
 
+        case SendCommandToService(service, command) => service ! ProcessCommand(command)
+
         case any => throw new UnsupportedOperationException(s"Service endpoint not configured to handle: $any")
     }
 

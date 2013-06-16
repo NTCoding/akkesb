@@ -36,4 +36,16 @@ class Service_endpoint_spec extends TestBaseClassWithJunitRunnerAndTestKit {
         }
     }
 
+
+    "When told to send a command to a service" - {
+        val remoteService = TestProbe()
+        val command = ("go_for_a_swimg", Array("swimming_trunks_type"), Array("speedo"))
+        val endpoint = TestActorRef(Props(() => new ServiceEndpoint(TestProbe().ref)))
+
+        endpoint ! SendCommandToService(remoteService.ref, command)
+
+        "It sends the command to the service" in {
+            remoteService.expectMsg(ProcessCommand(command))
+        }
+    }
 }
