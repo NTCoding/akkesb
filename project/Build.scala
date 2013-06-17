@@ -7,6 +7,7 @@ import akka.sbt.AkkaKernelPlugin._
 
 object akkesbBuild extends Build {
 
+
     lazy val buildSettings = Defaults.defaultSettings ++ multiJvmSettings ++ Seq(
         organization := "ntcoding",
         version := "0.1",
@@ -17,7 +18,7 @@ object akkesbBuild extends Build {
     lazy val example = Project(
         id = "example",
         base = file("."),
-        settings = buildSettings ++ AkkaKernelPlugin.distSettings
+        settings = buildSettings ++ AkkaKernelPlugin.distSettings ++ Seq(akkesbDistTask)
                    ++ Seq(
                             libraryDependencies ++= Dependencies.all,
                             outputDirectory in Dist := file("target/akkesb")
@@ -31,6 +32,13 @@ object akkesbBuild extends Build {
         // disable parallel tests
         parallelExecution in Test := false
     )
+
+    lazy val akkesbDist = TaskKey[Unit]("akkesbDist", "Creates distribution of application with akkesb customisations")
+    val akkesbDistTask = akkesbDist := {
+      IO.copyFile(new File("sample.akkesb.conf"), new File("target/akkesb/akkesb.conf"))
+    }
+    akkesbDist <<= Seq(dist).dependOn
+
 
     object Dependencies {
          val all = Seq(
