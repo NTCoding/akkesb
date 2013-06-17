@@ -34,10 +34,11 @@ object akkesbBuild extends Build {
     )
 
     lazy val akkesbDist = TaskKey[Unit]("akkesbDist", "Creates distribution of application with akkesb customisations")
-    val akkesbDistTask = akkesbDist := {
+    val akkesbDistTask = akkesbDist <<= dist map { d =>
       IO.copyFile(new File("sample.akkesb.conf"), new File("target/akkesb/akkesb.conf"))
+      d
     }
-    akkesbDist <<= Seq(dist).dependOn
+
 
 
     object Dependencies {
