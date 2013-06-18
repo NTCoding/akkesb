@@ -1,0 +1,27 @@
+<h1>Listing job_listings</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Company</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @job_listings.each do |job_listing| %>
+  <tr>
+    <td><%= job_listing.title %></td>
+    <td><%= job_listing.company %></td>
+    <td><%= job_listing.description %></td>
+    <td><%= link_to 'Show', job_listing %></td>
+    <td><%= link_to 'Edit', edit_job_listing_path(job_listing) %></td>
+    <td><%= link_to 'Destroy', job_listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Job listing', new_job_listing_path %>
