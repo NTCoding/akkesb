@@ -16,7 +16,7 @@ Dependencies
 ------------
 Apart from the obvious Scala and SBT you will also need some dependencies on your machine:
 
-1. DBus - e.g for Debian/Ubuntu/Crashbang: 
+1. DBus - e.g for Debian/Ubuntu/crunch bang: 
 
         apt-get install dbus
 

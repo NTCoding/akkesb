@@ -1,0 +1,7 @@
+/target
+/project/target
+/project/project/target
+.gitignore
+/.idea
+/.idea_modules
+/.history

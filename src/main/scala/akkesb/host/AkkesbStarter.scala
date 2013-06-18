@@ -9,7 +9,7 @@ import scala.collection.immutable.IndexedSeq
 import java.io.File
 
 
-class TestBooter extends Bootable {
+class AkkesbStarter extends Bootable {
 
     def startup() {
 
