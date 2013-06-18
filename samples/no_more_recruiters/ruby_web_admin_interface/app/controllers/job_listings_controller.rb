@@ -27,4 +27,14 @@ class JobListingsController < ApplicationController
     @job_listing = JobListing.new
   end
 
+  def create
+    @job_listing = JobListing.new(params[:job_listing])
+   
+    keys = ["title", "company", "description"]
+    values = [job_listing.title, job_listing.company, job_listing.description]
+    AkkesbBus.instance.send("job_listing_created", keys, values)
+
+    redirect_to "/"
+  end
+
 end
