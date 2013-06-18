@@ -1,0 +1,19 @@
+﻿Sample application (No more recruiters .com) Plan
+
+Phase 1 – Sending and handling of commands
+Website
+1. Create a rails website
+2. Create a page that shows job listings and allows data to be posted
+3. Create the Dbus client, and test it registers itself (qdbus)
+4. Add an akkesb.conf file in project
+5. Create a rake task to to copy an akkesb release, drop in the config and start it up
+6. Test it – hit web page – should be a failed message on dbus
+
+Catalogue service
+1. Knock up a simple Scala console application
+2. Create the dbus client
+3. Test that client registers itself on Dbus (qdbus)
+4. Create the configs and drop in the root of the project
+1. will handle the “create_job_listing” command
+5. Add build tasks that copy in an akkesb release and move in the configs
+
