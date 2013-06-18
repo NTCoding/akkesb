@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @deleteme.title %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @deleteme.company %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @deleteme.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_deleteme_path(@deleteme) %> |
+<%= link_to 'Back', deletemes_path %>

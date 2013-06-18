@@ -1,10 +1,10 @@
-<%= form_for(@job_listing) do |f| %>
-  <% if @job_listing.errors.any? %>
+<%= form_for(@deleteme) do |f| %>
+  <% if @deleteme.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@job_listing.errors.count, "error") %> prohibited this job_listing from being saved:</h2>
+      <h2><%= pluralize(@deleteme.errors.count, "error") %> prohibited this deleteme from being saved:</h2>
 
       <ul>
-      <% @job_listing.errors.full_messages.each do |msg| %>
+      <% @deleteme.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

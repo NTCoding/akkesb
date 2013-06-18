@@ -1,4 +1,7 @@
 RubyWebAdminInterface::Application.routes.draw do
+  resources :deletemes
+
+
   resources :job_listings
 
 

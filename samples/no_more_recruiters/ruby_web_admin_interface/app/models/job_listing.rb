@@ -1,3 +1,10 @@
-class JobListing < ActiveRecord::Base
-  attr_accessible :company, :description, :title
+class JobListing 
+	extend ActiveModel::Naming
+  	include ActiveModel::Conversion
+	attr_accessor :company, :description, :title
+  	
+  	def persisted?
+    	false
+  	end
+  
 end

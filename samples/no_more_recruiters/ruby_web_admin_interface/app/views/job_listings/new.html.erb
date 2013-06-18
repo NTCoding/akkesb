@@ -1,5 +1,24 @@
-<h1>New job_listing</h1>
+<h1>New job listing</h1>
 
-<%= render 'form' %>
+<%= form_for(@job_listing) do |f| %>
+   
+   <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 
-<%= link_to 'Back', job_listings_path %>
+<% end %>
