@@ -7,13 +7,16 @@ import org.freedesktop.dbus.DBusConnection
 import com.typesafe.config.{Config, ConfigFactory}
 import scala.collection.immutable.IndexedSeq
 import java.io.File
+import java.net.URLDecoder
 
 
 class AkkesbStarter extends Bootable {
 
     def startup() {
-
-        val file = new File("akkesb.conf")
+        val pathToFile = getClass.getProtectionDomain.getCodeSource.getLocation.getPath
+        val decoded = URLDecoder.decode(pathToFile, "UTF-8")
+        val confPath = new File(new File(decoded).getParentFile.getParentFile.getPath, "akkesb.conf")
+        val file = new File(confPath.getPath)
         if (!file.exists()) throw new UnsupportedOperationException("akkesb.conf does not exist. It should live in the \"akkesb\" folder")
 
         val config = ConfigFactory.load(ConfigFactory.parseFile(file))
