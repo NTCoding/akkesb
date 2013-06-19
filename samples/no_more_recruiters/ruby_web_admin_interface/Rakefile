@@ -3,18 +3,38 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
+require 'fileutils'
 
 #RubyWebAdminInterface::Application.load_tasks
 
- task :default => [:make_host_distribution, :copy_akkesb_config] do 
+ task :default => [:start_host] do 
  	puts 'execing rails server'
  	`rails server`
  end
 
+task :start_host => [:clear_previous_distribution, :make_host_distribution, :copy_akkesb_config] do
+	puts 'About to start Akkesb host'
+	`../RubyWebAppAkkesbHost/akkesb/akkesb_startup.sh`
+	put 'Akkesb host started'
+
+end
+
+task :clear_previous_distribution do 
+	puts 'Clearing previous distribution folder: ../RubyWebAppAkkesbHost'
+	FileUtils.rm_r("../RubyWebAppAkkesbHost")
+	puts 'Previous distribution cleared'
+end
+
  task :make_host_distribution do
- 	puts 'Not configured to make host distribution yet'
+ 	puts 'About to make host distribution'
+ 	FileUtils.mkdir("../RubyWebAppAkkesbHost")
+ 	FileUtils.cp_r("../../../target/akkesb", "../RubyWebAppAkkesbHost")
+ 	puts 'Akkesb host distribution available in ../RubyWebAppAkkesbHost'
  end
 
  task :copy_akkesb_config do
- 	puts 'Not configured to make host distribution yet'
+ 	puts 'About to copy akkesb.config to ../RubyWebAppAkkesbHost/akkesb'
+ 	FileUtils.copy("config/akkesb.conf", "../RubyWebAppAkkesbHost/akkesb")
+ 	FileUtils.chmod(0755, "../RubyWebAppAkkesbHost/akkesb/akkesb_startup.sh")
+ 	puts 'Copied akkesb.cofig to ../RubyWebAppAkkesbHost/akkesb'
  end
