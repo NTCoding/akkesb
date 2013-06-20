@@ -62,8 +62,8 @@ class Bus_host_startup_and_configuration_spec extends TestBaseClassWithJunitRunn
         val host = BusHost(hostName, port, application, service, handler, sender, connection, creator)
 
 
-        "it registers as a service on dbus using the supplied application and service name" in {
-            verify(connection) requestBusName f"akkesb.$application.$service"
+        "it registers as a service on dbus using the supplied application and service name with a 'Host' suffix" in {
+            verify(connection) requestBusName f"akkesb.$application.$service.Host"
         }
 
         "it passes a reference to the message sending actor to the message sender" in {

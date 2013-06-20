@@ -8,7 +8,7 @@ object BusHost {
     def apply(hostName: String, port: String, application: String, serviceName: String, handler: MessageHandler, sender: MessageSender,
               connection: TestableDBusConnection, actorSystemCreator: ActorSystemCreator) =  {
 
-        connection.requestBusName(f"akkesb.$application.$serviceName")
+        connection.requestBusName(f"akkesb.$application.$serviceName.Host")
 
         val actorSystem = actorSystemCreator.create(application, hostName, port)
         // TODO - these will all be created from the top level actor, not directly from the actor system
