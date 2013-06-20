@@ -104,7 +104,7 @@ object CommandsAreSentToRegisteredHandlersMultiJvmPaymentsServiceClient extends 
         connection.requestBusName("akkesb.commandsAreSentTest.payments_service.Client")
         connection.exportObject("/commands/receiving", handler)
 
-        Thread.sleep(10000)
+        Thread.sleep(11000)
 
         messages.head._1 must equal("stop_taking_payments_for_product")
         messages.head._2 must equal(Array("productId"))

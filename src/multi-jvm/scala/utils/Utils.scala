@@ -17,7 +17,7 @@ class Command(val command: (String, List[(String, Any)])) {
 
         connection.requestBusName("commands_are_sent_test.testing_and_assertions_jvm")
 
-        connection.getRemoteObject(f"akkesb.$application.$service", "/messages/outgoing", classOf[MessageSender]) match {
+        connection.getRemoteObject(f"akkesb.$application.$service.Host", "/messages/outgoing", classOf[MessageSender]) match {
             case sender: MessageSender => sender.send(command._1, command._2.map(_._1).toArray, command._2.map(_._2.toString).toArray)
             case _ => throw new Exception(f"failed to get remote object: $application.$service /akkesb Inbox")
         }
