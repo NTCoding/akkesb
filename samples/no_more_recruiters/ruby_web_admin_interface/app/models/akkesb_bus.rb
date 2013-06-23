@@ -13,8 +13,8 @@ class AkkesbBus
 	def send(command, keys, values)
 		host = @bus.service("akkesb.NoMoreRecruiters.RubyWebApp.Host").object("/messages/outgoing")
 		host.introspect
-		host.deault_iface = "akkesb.dbus.MessageSender"
-		host.send(command, keys, values)
+		host_iface = host["akkesb.dbus.MessageSender"]
+		host_iface.send(command, keys, values)
 	end
 
 end
