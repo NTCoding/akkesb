@@ -14,9 +14,8 @@ require 'fileutils'
 
 task :start_host => [:clear_previous_distribution, :make_host_distribution, :copy_akkesb_config] do
 	puts 'About to start Akkesb host'
-	`../RubyWebAppAkkesbHost/akkesb/akkesb_startup.sh`
+	exec '../RubyWebAppAkkesbHost/akkesb/akkesb_startup.sh'
 	put 'Akkesb host started'
-
 end
 
 task :clear_previous_distribution do 
