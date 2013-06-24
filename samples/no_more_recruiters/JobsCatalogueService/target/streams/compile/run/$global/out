@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0mRunning MessageListener [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/mnt/repos/akkesb/samples/no_more_recruiters/JobsCatalogueService/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/home/nick/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
