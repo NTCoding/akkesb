@@ -32,8 +32,8 @@ end
  end
 
  task :copy_akkesb_config do
- 	puts 'About to copy akkesb.config to ../RubyWebAppAkkesbHost/akkesb'
- 	FileUtils.copy("../akkesb.conf", "../RubyWebAppAkkesbHost/akkesb")
+ 	puts 'About to copy config/akkesb.conf to ../RubyWebAppAkkesbHost/akkesb'
+ 	FileUtils.copy("config/akkesb.conf", "../RubyWebAppAkkesbHost/akkesb")
  	FileUtils.chmod(0755, "../RubyWebAppAkkesbHost/akkesb/akkesb_startup.sh")
  	puts 'Copied akkesb.config to ../RubyWebAppAkkesbHost/akkesb'
  end
