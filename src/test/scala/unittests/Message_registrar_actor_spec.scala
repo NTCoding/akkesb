@@ -17,12 +17,10 @@ class Message_registrar_actor_spec extends TestBaseClassWithJunitRunnerAndTestKi
     // TODO - test cases for un-registered commands and duplicate registrations
 
     "When the message registrations actor has been supplied registration details" - {
-
         val registrationsActor = TestActorRef[MessageRegistrar]
         registrationsActor ! RegisterCommandHandler("send_tweet_command", "ntcoding_service")
 
         "And a 'who handles command' request is received for a command that has been registered" - {
-
             val keys = Array("userId", "userName")
             val values = Array("123", "MikeSlim")
             registrationsActor.tell(WhoHandlesCommand("send_tweet_command", keys, values), testActor)
@@ -47,12 +45,10 @@ class Message_registrar_actor_spec extends TestBaseClassWithJunitRunnerAndTestKi
 
 
     "When the message registrations actor has been supplied multiple registration details" - {
-
         val registrar = TestActorRef[MessageRegistrar]
         registrar ! RegisterMultipleCommandsHandler(List("command1", "command2", "command3"), "supa_service")
 
         "A 'who handles command' request for each registration" - {
-
             val keys = Array("")
             val values = Array("")
             registrar.tell(WhoHandlesCommand("command1", keys, values), testActor)
