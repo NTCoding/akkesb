@@ -7,3 +7,7 @@
 /target
 tmp/
 RubyWebAppAkkesbHost/
+
+target/
+.idea/
+.idea_modules/
