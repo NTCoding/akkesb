@@ -10,6 +10,7 @@ import akka.pattern.ask
 import spray.http._
 import spray.http.HttpHeaders.RawHeader
 import spray.http.HttpMethods._
+import spray.util.SprayActorLogging
 
 
 object Boot extends App {
@@ -23,7 +24,7 @@ object Boot extends App {
 }
 
 
-class SearchService (searcher: ActorRef) extends Actor {
+class SearchService (searcher: ActorRef) extends Actor with SprayActorLogging {
 
     implicit val timeout =  Timeout(20, TimeUnit.SECONDS)
     implicit val executionContext = context.dispatcher
@@ -58,7 +59,7 @@ class SearchService (searcher: ActorRef) extends Actor {
             case Some(searchTerm) => {
                     (searcher ?  SearchFor(searchTerm)).mapTo[String] map {result =>
                         println(s"Returning 200 response with entity: $result")
-                        HttpResponse(200, entity = result, headers = List(RawHeader("Content-Type", "application/json")))
+                        HttpResponse(200, entity = HttpEntity(ContentTypes.`application/json`, result))
                     }
             }
         }
@@ -67,16 +68,3 @@ class SearchService (searcher: ActorRef) extends Actor {
 
 
 case class SearchFor(searchTerm: String)
-
-
-class Searcher extends Actor {
-
-    def receive = {
-        case SearchFor(searchTerm) => {
-            println(s"Searcher received search request for: $searchTerm")
-            sender ! """{ "result"="yippee" }"""
-        }
-    }
-
-}
-
