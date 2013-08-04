@@ -45,7 +45,7 @@ class SearchService (searcher: ActorRef) extends Actor with SprayActorLogging {
 
     def handleGetRequestFor(uri: Uri) = {
         uri.path match {
-            case Uri.Path("/jobs") => handleJobsRequest(uri.query.get("q"))
+            case Uri.Path("/jobs") => handleJobsRequest(HandleJobsRequest(uri.query))
             case Uri.Path(path) => {
                 println(s"No handler for path: $path")
                 Future {HttpResponse(400, s"No handler for path: $path")}
@@ -53,12 +53,14 @@ class SearchService (searcher: ActorRef) extends Actor with SprayActorLogging {
         }
     }
 
-    def handleJobsRequest(q: Option[String]) = {
-        q match {
-            case None => Future{ HttpResponse(400, "Missing value for \"q\" parameter") }
-            case Some(searchTerm) => {
-                    (searcher ?  SearchFor(searchTerm)).mapTo[String] map {result =>
-                        println(s"Returning 200 response with entity: $result")
+    def handleJobsRequest(request:  HandleJobsRequest) = {
+        request match {
+            case HandleJobsRequest(None, _, _) => {
+                Future{ HttpResponse(400, "Missing value for \"q\" parameter") }
+            }
+            case HandleJobsRequest(Some(searchTerm), minSalary, maxSalary) => {
+                    (searcher ?  SearchFor(searchTerm, minSalary, maxSalary)).mapTo[String] map {result =>
+                        println(s"Returning 200 response")
                         HttpResponse(200, entity = HttpEntity(ContentTypes.`application/json`, result))
                     }
             }
@@ -67,4 +69,23 @@ class SearchService (searcher: ActorRef) extends Actor with SprayActorLogging {
 }
 
 
-case class SearchFor(searchTerm: String)
+case class SearchFor(searchTerm: String, minSalary: Option[Int], maxSalary: Option[Int])
+
+object HandleJobsRequest {
+
+    def apply(queryString: Uri.Query): HandleJobsRequest = {
+        val query = queryString get "q"
+        val minSalary = asInt(queryString get "minSalary")
+        val maxSalary = asInt(queryString get "maxSalary")
+        HandleJobsRequest(query, minSalary, maxSalary)
+    }
+
+    private def asInt(param: Option[String]) = param match {
+        case None => None
+        case Some(str) => Option(Integer.parseInt(str))
+
+    }
+}
+
+case class HandleJobsRequest(query: Option[String], minSalary: Option[Int], maxSalary: Option[Int])
+
